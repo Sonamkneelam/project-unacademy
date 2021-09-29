@@ -82,7 +82,7 @@ export const DataComp = ({ items, id, name }) => {
           {items.map(({ id, name, img }) => {
             return (
               <>
-                <Second key={id} onClick={() => history.push(`/goal${name}`)}>
+                <Second key={id} onClick={() => history.push(`/goal/${name}`)}>
                   <Image>
                     <img src={img} alt='' />
                   </Image>

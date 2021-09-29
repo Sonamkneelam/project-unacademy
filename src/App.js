@@ -4,6 +4,7 @@ import "./App.css";
 import BeforeHomePage from "./pages/BeforeHomePage";
 import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
+import { Goal } from "./pages/Goal";
 
 function App() {
   return (
@@ -12,9 +13,13 @@ function App() {
         <Route exact path='/'>
           <BeforeHomePage />
         </Route>
-        <Route exact path='/explore'>
+        <Route path='/explore'>
           <ExplorePage />
         </Route>
+        <Route path='/goal/:name'>
+          <Goal />
+        </Route>
+        <Route>404</Route>
       </Switch>
     </div>
   );
