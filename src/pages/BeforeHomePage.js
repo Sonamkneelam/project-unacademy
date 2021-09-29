@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import HomeBlock3 from "../components/HomeBlock3"
+import Footer from "../components/Footer"
 
 function BeforeHomePage(){
     const block3adetails=[
@@ -83,8 +84,10 @@ function BeforeHomePage(){
                             <img src="https://static.uacdn.net/production/_next/static/images/newApp.png?q=75&w=640" alt="mobile"/>
                         </div>
                     </div>
+                    <div className="block5"></div>
                 </div>
             </div>
+            <Footer/>
         </ BeforeHomePageStyled>
     )
 }
@@ -244,6 +247,11 @@ const BeforeHomePageStyled = styled.div`
                         height: 399px;
                     }
                 }
+            }
+            .block5{
+                border: 1px solid black;
+                height: 604px;
+                margin-top: 112px;
             }
         }
     }
