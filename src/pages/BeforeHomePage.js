@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import HomeBlock3 from "../components/HomeBlock3"
+import Footer from "../components/Footer"
+import {Link} from "react-router-dom"
 
 function BeforeHomePage(){
     const block3adetails=[
@@ -47,7 +49,7 @@ function BeforeHomePage(){
                                 <div>{"GATE & ESE"}</div>
                                 <div>UPSC CSE - Optional</div>
                             </div>
-                            <button>Start Learning</button>
+                            <Link to="/explore"><button>Start Learning</button></Link>
                         </div>
                         <div className="course1">
                             <img src="https://static.uacdn.net/production/_next/static/images/home/test-prep-learning.svg?q=75&w=256" alt="doll"/>
@@ -62,7 +64,7 @@ function BeforeHomePage(){
                             <div className="line5">
                                 <div>Uttar Pradesh Board</div>
                             </div>
-                            <button>Start Learning</button>
+                            <Link to="/explore"> <button>Start Learning</button></Link>
                         </div>
                     </div>
                     <div className="block3">
@@ -83,171 +85,179 @@ function BeforeHomePage(){
                             <img src="https://static.uacdn.net/production/_next/static/images/newApp.png?q=75&w=640" alt="mobile"/>
                         </div>
                     </div>
+                    <div className="block5"></div>
                 </div>
             </div>
+            <Footer/>
         </ BeforeHomePageStyled>
-    )
+  );
 }
 
+
 const BeforeHomePageStyled = styled.div`
-    border: 1px solid black;
-    width: 90%;
+  border: 1px solid black;
+  width: 90%;
+  margin: auto;
+  .header {
+    width: 80%;
     margin: auto;
-    .header{
-        width: 80%;
-        margin: auto;
-        border: 1px solid red;
-        padding: 1.5%;
-        .navbar{
-            border: 1px solid red;
-            display: flex;
-            justify-content:space-between;
-            button{
-                width: 7%;
-                height: 40px;
-                border-radius: 5px;
-                border: none;
-                background-color: #08bd80;
-                color: white;
-                font-size: 1.1rem;
-                font-weight: 600;
-            }
-        }
-        .heading{
-            border: 1px solid red;
-            margin-top: 148px;
-            .head{
-                color: #3C4852;
-                font-size: 56px;
-                font-weight: bold;
-                border: 1px solid black;
-            }
-            .course{
-                margin-top: 112px;
-                border: 1px solid black;
-                display: grid;
-                grid-template-columns: 48% 48%;
-                grid-column-gap: 4%;
-                .course1{
-                    border: 1px solid blue;
-                    border-radius: 6px;
-                    height:336px;
-                    position: relative;
-                    img{
-                        position: absolute;
-                        bottom: 0;
-                        right: 0;
-                    }
-                    .line1{
-                        font-size: 32px;
-                        margin-left: 24px;
-                        margin-top: 40px;
-                        color: #3C4852;
-                    }
-                    .line2{
-                        font-size: 32px;
-                        font-weight: bold;
-                        margin-left: 24px;
-                        color: #3C4852;
-                    }
-                    .line3{
-                        font-size: 18px;
-                        margin-left: 24px;
-                        margin-top: 8px;
-                        color: #7A8B94;
-                    }
-                    .line4{
-                        border: 1px solid black;
-                        width: 70%;
-                        margin-left: 24px;
-                        margin-top: 8px;
-                        display: flex;
-                        justify-content: space-between;
-                        div{
-                            font-size: 14px;
-                            color: #08BD80;
-                            font-weight: bold;
-                        }
-                    }
-                    .line5{
-                        border: 1px solid black;
-                        width: 46%;
-                        margin-left: 24px;
-                        margin-top: 8px;
-                        display: flex;
-                        justify-content: space-between;
-                        div{
-                            font-size: 14px;
-                            color: #08BD80;
-                            font-weight: bold;
-                        }
-                    }
-                    button{
-                        margin-left: 24px;
-                        padding: 14px 36px; 
-                        margin-top: 48px;
-                        border-radius: 6px;
-                        background-color: #08BD80;
-                        font-size: 16px;
-                        font-weight: bold;
-                        color: white;
-                        border: none;
-                    }
-                }
-            }
-            .block3{
-                height: 383px;
-                border: 1px solid black;
-                margin-top: 112px;
-                display: grid;
-                grid-template-columns: 32.7% 32.7% 32.7%;
-                grid-column-gap: 1%;
-            }
-            .block4{
-                height: 403px;
-                border: 1px solid black;
-                margin-top: 112px;
-                display: grid;
-                grid-template-columns: 50% 35%;
-                .block41{
-                    border: 1px solid red;
-                    .block411{
-                        color: #3C4852;
-                        font-size: 40px;
-                        margin-left: 24px;
-                        margin-top: 97px;
-                        font-weight: bold;
-                    }
-                    .block412{
-                        color: #3C4852;
-                        font-size: 18px;
-                        margin-left: 24px;
-                        margin-top: 32px;
-                    }
-                    .block413{
-                        margin-top: 32px;
-                        margin-left: 24px;
-                        width: 50%;
-                        display: grid;
-                        grid-template-columns: 47% 47%;
-                        grid-column-gap: 6%;
-                        img{
-                            width: 100%;
-                            height: 40px;
-                        }
-                    }
-                }
-                .block42{
-                    border: 1px solid red;
-                    img{
-                        width: 100%;
-                        height: 399px;
-                    }
-                }
-            }
-        }
+    border: 1px solid red;
+    padding: 1.5%;
+    .navbar {
+      border: 1px solid red;
+      display: flex;
+      justify-content: space-between;
+      button {
+        width: 7%;
+        height: 40px;
+        border-radius: 5px;
+        border: none;
+        background-color: #08bd80;
+        color: white;
+        font-size: 1.1rem;
+        font-weight: 600;
+      }
     }
-    
+    .heading {
+      border: 1px solid red;
+      margin-top: 148px;
+      .head {
+        color: #3c4852;
+        font-size: 56px;
+        font-weight: bold;
+        border: 1px solid black;
+      }
+      .course {
+        margin-top: 112px;
+        border: 1px solid black;
+        display: grid;
+        grid-template-columns: 48% 48%;
+        grid-column-gap: 4%;
+        .course1 {
+          border: 1px solid blue;
+          border-radius: 6px;
+          height: 336px;
+          position: relative;
+          img {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+          }
+          .line1 {
+            font-size: 32px;
+            margin-left: 24px;
+            margin-top: 40px;
+            color: #3c4852;
+          }
+          .line2 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-left: 24px;
+            color: #3c4852;
+          }
+          .line3 {
+            font-size: 18px;
+            margin-left: 24px;
+            margin-top: 8px;
+            color: #7a8b94;
+          }
+          .line4 {
+            border: 1px solid black;
+            width: 70%;
+            margin-left: 24px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            div {
+              font-size: 14px;
+              color: #08bd80;
+              font-weight: bold;
+            }
+          }
+          .line5 {
+            border: 1px solid black;
+            width: 46%;
+            margin-left: 24px;
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            div {
+              font-size: 14px;
+              color: #08bd80;
+              font-weight: bold;
+            }
+          }
+          button {
+            margin-left: 24px;
+            padding: 14px 36px;
+            margin-top: 48px;
+            border-radius: 6px;
+            background-color: #08bd80;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            border: none;
+            cursor: pointer;
+          }
+        }
+      }
+      .block3 {
+        height: 383px;
+        border: 1px solid black;
+        margin-top: 112px;
+        display: grid;
+        grid-template-columns: 32.7% 32.7% 32.7%;
+        grid-column-gap: 1%;
+      }
+      .block4 {
+        height: 403px;
+        border: 1px solid black;
+        margin-top: 112px;
+        display: grid;
+        grid-template-columns: 50% 35%;
+        .block41 {
+          border: 1px solid red;
+          .block411 {
+            color: #3c4852;
+            font-size: 40px;
+            margin-left: 24px;
+            margin-top: 97px;
+            font-weight: bold;
+          }
+          .block412 {
+            color: #3c4852;
+            font-size: 18px;
+            margin-left: 24px;
+            margin-top: 32px;
+          }
+          .block413 {
+            margin-top: 32px;
+            margin-left: 24px;
+            width: 50%;
+            display: grid;
+            grid-template-columns: 47% 47%;
+            grid-column-gap: 6%;
+            img {
+              width: 100%;
+              height: 40px;
+            }
+            .block5{
+                border: 1px solid black;
+                height: 604px;
+                margin-top: 112px;
+            }
+          }
+        }
+        .block42 {
+          border: 1px solid red;
+          img {
+            width: 100%;
+            height: 399px;
+          }
+        }
+      }
+    }
+  }
 `;
 
 export default BeforeHomePage;
