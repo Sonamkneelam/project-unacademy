@@ -25,6 +25,10 @@ const FootercompStyled=styled.div`
     .text{
         font-size: 12px;
         margin-bottom: 10px;
+        cursor: pointer;
+        &:hover{
+            color:#08BD80;
+        }
     }
 `;
 

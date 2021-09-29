@@ -85,7 +85,9 @@ function BeforeHomePage(){
                             <img src="https://static.uacdn.net/production/_next/static/images/newApp.png?q=75&w=640" alt="mobile"/>
                         </div>
                     </div>
-                    <div className="block5"></div>
+                    {/* <div className="block5">
+                        
+                    </div> */}
                 </div>
             </div>
             <Footer/>
@@ -95,16 +97,16 @@ function BeforeHomePage(){
 
 
 const BeforeHomePageStyled = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 90%;
   margin: auto;
   .header {
     width: 80%;
     margin: auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 1.5%;
     .navbar {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       display: flex;
       justify-content: space-between;
       button {
@@ -119,22 +121,22 @@ const BeforeHomePageStyled = styled.div`
       }
     }
     .heading {
-      border: 1px solid red;
+      /* border: 1px solid red; */
       margin-top: 148px;
       .head {
         color: #3c4852;
         font-size: 56px;
         font-weight: bold;
-        border: 1px solid black;
+        /* border: 1px solid black; */
       }
       .course {
         margin-top: 112px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         display: grid;
         grid-template-columns: 48% 48%;
         grid-column-gap: 4%;
         .course1 {
-          border: 1px solid blue;
+          /* border: 1px solid blue; */
           border-radius: 6px;
           height: 336px;
           position: relative;
@@ -162,7 +164,7 @@ const BeforeHomePageStyled = styled.div`
             color: #7a8b94;
           }
           .line4 {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 70%;
             margin-left: 24px;
             margin-top: 8px;
@@ -175,7 +177,7 @@ const BeforeHomePageStyled = styled.div`
             }
           }
           .line5 {
-            border: 1px solid black;
+            /* border: 1px solid black; */
             width: 46%;
             margin-left: 24px;
             margin-top: 8px;
@@ -203,7 +205,7 @@ const BeforeHomePageStyled = styled.div`
       }
       .block3 {
         height: 383px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-top: 112px;
         display: grid;
         grid-template-columns: 32.7% 32.7% 32.7%;
@@ -211,52 +213,54 @@ const BeforeHomePageStyled = styled.div`
       }
       .block4 {
         height: 403px;
-        border: 1px solid black;
+        /* border: 1px solid black; */
         margin-top: 112px;
         display: grid;
         grid-template-columns: 50% 35%;
         .block41 {
-          border: 1px solid red;
-          .block411 {
-            color: #3c4852;
-            font-size: 40px;
-            margin-left: 24px;
-            margin-top: 97px;
-            font-weight: bold;
-          }
-          .block412 {
-            color: #3c4852;
-            font-size: 18px;
-            margin-left: 24px;
-            margin-top: 32px;
-          }
-          .block413 {
-            margin-top: 32px;
-            margin-left: 24px;
-            width: 50%;
-            display: grid;
-            grid-template-columns: 47% 47%;
-            grid-column-gap: 6%;
-            img {
-              width: 100%;
-              height: 40px;
+            /* border: 1px solid red; */
+            .block411 {
+                color: #3c4852;
+                font-size: 40px;
+                margin-left: 24px;
+                margin-top: 97px;
+                font-weight: bold;
             }
-            .block5{
-                border: 1px solid black;
-                height: 604px;
-                margin-top: 112px;
+            .block412 {
+                color: #3c4852;
+                font-size: 18px;
+                margin-left: 24px;
+                margin-top: 32px;
             }
-          }
+            .block413 {
+                margin-top: 32px;
+                margin-left: 24px;
+                width: 50%;
+                display: grid;
+                grid-template-columns: 47% 47%;
+                grid-column-gap: 6%;
+                img {
+                    width: 100%;
+                    height: 40px;
+                }
+            }
         }
         .block42 {
-          border: 1px solid red;
-          img {
-            width: 100%;
-            height: 399px;
-          }
+            /* border: 1px solid red; */
+            img {
+                width: 100%;
+                height: 399px;
+            }
         }
+        
       }
     }
+    .block5{
+        /* border: 1px solid black; */
+        height: 604px;
+        margin-top: 112px;
+    }
+    
   }
 `;
 

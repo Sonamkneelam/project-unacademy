@@ -12,7 +12,7 @@ function HomeBlock3({id,title,image,discription}){
 }
 
 const HomeBlock3Styled =styled.div`
-    border: 1px solid black;
+    /* border: 1px solid black; */
     img{
         width: 100%;
         height: 237px;
