@@ -1,0 +1,104 @@
+{
+    "class": [
+        {
+            "CBSE": [
+                {
+                    "name": "CBSC Class 6",
+                    "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 7",
+                    "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 8",
+                    "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 9",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 10",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 11",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "CBSC Class 12",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "Young Coders",
+                    "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                },
+                {
+                    "name": "Creative Cordner",
+                    "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                }
+            ]
+        },
+        {
+            "Maharashtra State Board": [
+                {
+                    "name": "SSC Class 9",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "SSC Class 10",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "HSC Class 11",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "HSC Class 12",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                }
+            ]
+        },
+        {
+            "Maharashtra State Board": [
+                {
+                    "name": "UP Board Class 9",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "UP Board Class 10",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "UP Board Class 11",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "UP Board Class 12",
+                    "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                }
+            ]
+        },
+        {
+            "JEE and NEET Preparation": [
+                {
+                    "name": "IIT JEE",
+                    "img": "https://static.uacdn.net/topology/TMUVD/icon/origin.png?q=75&w=96"
+                },
+                {
+                    "name": "NEET UG",
+                    "img": "https://static.uacdn.net/topology/YOTUH/icon/origin.png?q=75&w=96"
+                }
+            ]
+        },
+        {
+            "IITJEE/NEET Foundation & NTSE": [
+                {
+                    "name": "IITJEE, NEET Foundation & NTSE",
+                    "img": "https://static.uacdn.net/topology/TPSBK/icon/origin.png?q=75&w=96"
+                }
+            ]
+        }
+    ]
+}
