@@ -2,15 +2,8 @@ import styled from "styled-components";
 import HomeBlock3 from "../components/HomeBlock3";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
-import { Login } from "../components/Login-SignUp/Login";
-import { useState } from "react";
 
 function BeforeHomePage() {
-  const [show, setShow] = useState(false);
-  const handleLogin=() => {
-                setShow(!show);
-                console.log(show);
-              }
   const block3adetails = [
     {
       id: "b31",
@@ -45,17 +38,8 @@ function BeforeHomePage() {
             src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256"
             alt="logo"
           />
-          {show ? (
-            <>
-              <Login handleLogin={handleLogin}></Login>
-            </>
-          ) : (
-            <button className='button'
-              onClick={handleLogin}
-            >
-              Login
-            </button>
-          )}
+
+          <button className="button">Login</button>
         </div>
         <div className="heading">
           <div className="head">
@@ -108,7 +92,7 @@ function BeforeHomePage() {
               </Link>
             </div>
           </div>
-          <div className='block3'>
+          <div className="block3">
             {block3adetails.map((el) => {
               return <HomeBlock3 {...el} />;
             })}
