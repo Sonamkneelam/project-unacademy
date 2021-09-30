@@ -4,7 +4,7 @@ import "./App.css";
 import BeforeHomePage from "./pages/BeforeHomePage";
 import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
-import { Goal } from "./pages/Goal";
+import { Goal } from "./pages/GoalPage";
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         </Route>
         <Route>404</Route>
       </Switch>
+      
     </div>
   );
 }
