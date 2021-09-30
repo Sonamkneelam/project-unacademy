@@ -1,0 +1,79 @@
+.input {
+    background: #FFFFFF;
+    border: 1px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 500px;
+    height: 54px;
+    top: 18%;
+    left: 50px;
+    position: absolute;
+    padding: 4% 5%;
+
+}
+
+.buttonContainer {
+    top: 25%;
+    left: 50px;
+    position: absolute;
+    width: 500px;
+
+}
+
+.button {
+    width: 17%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1%;
+
+}
+
+
+.otp {
+    background: #FFFFFF;
+    border: 1px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 500px;
+    height: 54px;
+    top: 25%;
+    left: 50px;
+    position: absolute;
+    padding: 4% 5%;
+}
+
+.formContainer {
+    top: 32%;
+    left: 50px;
+    position: absolute;
+}
+
+.formContainer>input {
+    padding: 4% 5%;
+    background: #FFFFFF;
+    border: 1px solid #E9EEF2;
+    box-sizing: border-box;
+    border-radius: 6px;
+    width: 500px;
+    height: 54px;
+    margin: 1.4% 0;
+}
+
+.verify {
+    width: 17%;
+    height: 40px;
+    border-radius: 8px;
+    border: none;
+
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 1%;
+    top: 98%;
+    left: -2px;
+    position: absolute;
+
+}
