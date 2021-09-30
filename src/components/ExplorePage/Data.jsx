@@ -21,7 +21,9 @@ const Second = styled.div`
   -webkit-box-align: center;
   cursor: pointer;
   transition: box-shadow 0.2s ease-in-out 0s;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 20%),
+    0px 1px 1px 0px rgb(0 0 0 / 14%), 0px 1px 3px 0px rgb(0 0 0 / 12%);
+  box-shadow: 0px 16px 32px 0px rgb(245, 247, 249);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,7 +46,7 @@ const Image = styled.div`
   height: 40px;
   width: 40px;
   left: 10px;
-  top: 10px;
+  top: 0px;
   border-radius: 0px;
   color: #3c4852;
   & img {
@@ -57,19 +59,17 @@ const Image = styled.div`
   }
 `;
 const Name = styled.p`
-  font-weight: 600;
+  color: #3c4852 !important;
+  font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
   font-size: 14px;
-  line-height: 150%;
-  margin: 0px;
-  font-size: 16px;
   line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  font-family: AvertaStd-Bold;
-  font-size: 12px;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  word-break: break-word;
+  outline: none;
+  white-space: nowrap;
+  font-weight: 600;
 `;
 export const DataComp = ({ items, id, name }) => {
   const history = useHistory();

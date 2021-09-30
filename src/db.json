@@ -1,8 +1,67 @@
 {
-    "class": [
+  "class": [
+    {
+      "id": "1a",
+      "CBSE": [
         {
-            "id": "1a",
-            "CBSE": [
+          "id": "1",
+          "name": "CBSE Class 6",
+          "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96",
+          "tutor": [
+            {
+              "id": "1t1",
+              "name": "Diksha Bhuwalaka",
+              "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+              "subject": "SCIENCE",
+              "title": "Lets Crack - Science- Teachers Day Special KBC - DB13",
+              "end": "Sep 5 2021",
+              "language": "ENGLISH",
+              "desc": "In this session Diksha Bhuwalka Mam will take Important Topics and Poll Session on Fibre to Fabric with lots of Fun Activities in the class. The course will be helpful for aspirants preparing for CBSE Class 6. Learners at any stage of their preparation will be benefited from the course. Polls &amp; Quizzes will be conducted throughout the class.",
+              "watch": "3M watch mins"
+            },
+            {
+              "id": "1t2",
+              "name": "Harshita Jain",
+              "img": "https://edge.uacdn.net/static/thumbnail/course/e529fd3c71934a419c7964fe21908a48.png?q=100&w=512&fm=webp",
+              "subject": "SCIENCE",
+              "title": "Lets Crack - Science- Motion and Measurement of distanc - HJ05",
+              "end": "Sep 27 2021",
+              "language": "HINDI",
+              "desc": "In this session, Harshita Jain will discuss about motion and measurement of distance . It will be helpful for the aspirants preparing for Class 6. This session will be conducted in Hindi and the notes will be provided in English.",
+              "watch": "876K watch mins"
+            },
+            {
+              "id": "1t3",
+              "name": "Neha Saini",
+              "img": "https://edge.uacdn.net/static/thumbnail/course/ff9b6bab7dd34f4bacc43f1bf21a4fa7.png?q=100&w=512&fm=webp",
+              "subject": "SCIENCE",
+              "title": "Lets Crack Science- Changes Around Us (Picture polls) - NS01",
+              "end": "Sep 28 2021",
+              "language": "HINDI",
+              "desc": "In this class, Neha Saini will discuss Changes Around Us with polls and fun . It will be helpful for the aspirants preparing for CBSE 6 This class will be conducted in Hindi and the notes will be provided in English.",
+              "watch": "5M watch mins"
+            },
+            {
+              "id": "1t4",
+              "name": "Ashmeet Kaur",
+              "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+              "subject": "ENGLISH",
+              "title": "Lets Crack English - Diary Entry Writing - AK28",
+              "end": "Sep 5 2021",
+              "language": "ENGLISH",
+              "desc": "Do you know how to write an ideal diary-entry for your writing section of English exam and your new 2021 diary? Join this class by Ashmeet Ma'am to master this art of diary-entry writing.",
+              "watch": "2M watch mins"
+            }
+          ]
+        },
+        {
+          "id": "1b",
+          "Maharashtra State Board": [
+            {
+              "id": "10",
+              "name": "SSC Class 9",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
                 {
                     "id": "1",
                     "name": "CBSC Class 6",
@@ -1022,11 +1081,13 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "id": "1b",
-            "Maharashtra State Board": [
+              ]
+            },
+            {
+              "id": "13",
+              "name": "HSC Class 12",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
                 {
                     "id": "10",
                     "name": "SSC Class 9",
@@ -1407,11 +1468,120 @@
                         }
                     ]
                 }
-            ]
+              ]
+            }
+          ]
         },
         {
-            "id": "1c",
-            "UP State Board": [
+          "id": "1c",
+          "UP State Board": [
+            {
+              "id": "14",
+              "name": "UP Board Class 9",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "14t1",
+                  "name": "Vineet Kapoor",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/3c818cfbfb234d22aeb5e0ed0d8e6b77.jpg?q=100&w=512&fm=webp",
+                  "subject": "ORATOR'S CORNER",
+                  "title": "How to Speak Non-Stop in English",
+                  "end": "Aug 8, 2021 • 1h 2m",
+                  "language": "HINGLISH",
+                  "desc": "In this special class for the learners of English speaking, Vinit sir will explain how to speak English non-stop. You will learn different techniques of talking fluently in English.",
+                  "watch": "365K watch mins"
+                },
+                {
+                  "id": "14t2",
+                  "name": "Kusum Goyal",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/0ca92dcbafe641388efac02df02951ea.png?q=100&w=512&fm=webp",
+                  "subject": "ORATOR'S CORNER",
+                  "title": "Let's crack French - Classroom Objects - Use Code KG31",
+                  "end": "Sep 2, 2021 • 1h 1m",
+                  "language": "HINDI",
+                  "desc": "In this class Kusum Goyal is going to teach verbs in French language and would be helpful for aspirants preparing for French exams. Learners at any stage of their preparation will be benefited by the course. The course will be covered in English.",
+                  "watch": "2M watch mins"
+                },
+                {
+                  "id": "14t3",
+                  "name": "Sandeep Batra",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/2544143a781c4676908e3abca312fdfc.png?q=100&w=512&fm=webp",
+                  "subject": "ENTERTAINER'S CORNER",
+                  "title": "SUPER SINGER : A Singing Master Class 🎵",
+                  "end": "Sep 5, 2021 • 1h 16m",
+                  "language": "HINGLISH",
+                  "desc": "In this MASTERCLASS you will be learning some amazing techniques and tricks used by the top most singers in the world that will immediately help you sing better and sound fabulous !! 🎵",
+                  "watch": "127K watch mins"
+                },
+                {
+                  "id": "14t4",
+                  "name": "Kusum Goyal",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/0ca92dcbafe641388efac02df02951ea.png?q=100&w=512&fm=webp",
+                  "subject": "ORATOR'S CORNER",
+                  "title": "Let's crack French - Classroom Objects - Use Code KG31",
+                  "end": "Sep 9, 2021 • 1h 1m",
+                  "language": "HINDI",
+                  "desc": "In this class Kusum Goyal is going to teach verbs in French language and would be helpful for aspirants preparing for French exams. Learners at any stage of their preparation will be benefited by the course. The course will be covered in English.",
+                  "watch": "2M watch mins"
+                }
+              ]
+            },
+            {
+              "id": "15",
+              "name": "UP Board Class 10",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "15t1",
+                  "name": "Pawan Wagh",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/94e4e4d2e1c742ceaa93f71e44c94787.png?q=75&w=1920",
+                  "subject": "MATHEMATICS - PART I",
+                  "title": "Basic Mathematics Day 7",
+                  "end": "Sep 17, 2021 • 1h",
+                  "language": "HINDI",
+                  "desc": "Educator Pawan Wagh will take a special class on Basic Mathematics. He will take some basic concepts of the given topic and also take a quiz. This class is helpful for all class students.",
+                  "watch": "4M watch mins"
+                },
+                {
+                  "id": "15t2",
+                  "name": "Parth Momaya",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/C353217A-7A8A-46B5-988B-B685ECDA0F5B_special_class.png?q=75&w=1920",
+                  "subject": "SCIENCE & TECHNOLOGY - PART II",
+                  "title": "Biology Marathon #5 (Glycolysis, Kreb's cycle, ETC reaction)",
+                  "end": "Sep 18, 2021 • 1h 9m",
+                  "language": "HINGLISH",
+                  "desc": "In this series of lectures, Educator Parth Momaya will be discussing all the important concepts of Biology for SSC Class 10. This lecture is dedicated to the topic Energy production from Life processes in living organisms- 1, Science 2 chapter 2.",
+                  "watch": "126K watch mins"
+                },
+                {
+                  "id": "15t3",
+                  "name": "Parth Momaya",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/C353217A-7A8A-46B5-988B-B685ECDA0F5B_special_class.png?q=75&w=1920",
+                  "subject": "SCIENCE & TECHNOLOGY - PART II",
+                  "title": "Biology Marathon #6 (Cell Division)",
+                  "end": "Sep 18, 2021 • 1h 9m",
+                  "language": "HINGLISH",
+                  "desc": "In this series of lectures, Educator Parth Momaya will be discussing all the important concepts of Biology for SSC Class 10. This lecture is dedicated to the topic Cell Division, Mitosis and Meiosis from Life processes in living organisms- 1, Science 2 chapter 2.",
+                  "watch": "126K watch mins"
+                },
+                {
+                  "id": "15t4",
+                  "name": "Parth Momaya",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/C353217A-7A8A-46B5-988B-B685ECDA0F5B_special_class.png?q=75&w=1920",
+                  "subject": "SCIENCE & TECHNOLOGY - PART II",
+                  "title": "Biology Marathon #7 (Criteria for classification)",
+                  "end": "Sep 18, 2021 • 1h 9m",
+                  "language": "HINGLISH",
+                  "desc": "In this series of lectures, Educator Parth Momaya will be discussing all the important concepts of Biology for SSC Class 10. This lecture is dedicated to the topic Criteria for classification, from Animal Classification in Science 2.",
+                  "watch": "126K watch mins"
+                }
+              ]
+            },
+            {
+              "id": "16",
+              "name": "UP Board Class 11",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
                 {
                     "id": "14",
                     "name": "UP Board Class 9",
@@ -1792,11 +1962,142 @@
                         }
                     ]
                 }
-            ]
+              ]
+            },
+            {
+              "id": "17",
+              "name": "UP Board Class 12",
+              "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "17t1",
+                  "name": "Jagdish Wagh",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/057e72d2a54845748bda38ef5201454e.png?q=75&w=1920",
+                  "subject": "CHEMISTRY",
+                  "title": "Chemistry Mock Test-1.0",
+                  "end": "Sep 18, 2021 • 1h 8m",
+                  "language": "MARATHI",
+                  "desc": "In this class i will take most important MCQs from physical Chemistry. based on previous year questions we will take same kind of questions. This session will definitely help you to improve score.",
+                  "watch": "7M watch mins"
+                },
+                {
+                  "id": "17t2",
+                  "name": "Jagdish Wagh",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/057e72d2a54845748bda38ef5201454e.png?q=75&w=1920",
+                  "subject": "CHEMISTRY",
+                  "title": "Chemistry Mock Test-2.0",
+                  "end": "Sep 19, 2021 • 1h 10m",
+                  "language": "MARATHI",
+                  "desc": "In this class i will take most important MCQs from physical Chemistry. based on previous year questions we will take same kind of questions. This session will definitely help you to improve score.",
+                  "watch": "7M watch mins"
+                },
+                {
+                  "id": "17t3",
+                  "name": "Vandana Bajaj",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/3b27d347d97e466eb2ec0e56da1a7f22.png?q=75&w=1920",
+                  "subject": "ENGLISH",
+                  "title": "MCQs Series - Mixed Grammar (Code: VB20)",
+                  "end": "Sep 18, 2021 • 1h 8m",
+                  "language": "HINGLISH",
+                  "desc": "In this class, Vandana Bajaj will discuss the very important MCQs Series on Mixed Grammar  by way of polls. The course will be helpful for aspirants preparing for SSC &amp; HSC Class 8, 9, 10, 11 &amp; 12 and to those who are preparing for competitive exams.",
+                  "watch": "14M watch mins"
+                },
+                {
+                  "id": "17t4",
+                  "name": "Digambar Mali",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/28f6ba109a164bd386bff4511b8b08c7.png?q=75&w=1920",
+                  "subject": "BIOLOGY",
+                  "title": "Surprise Brain Teasers for Class 12 Students",
+                  "end": "Sep 27, 2021 • 1h",
+                  "language": "MARATHI",
+                  "desc": "In this session, I am Going to cover theoretical concepts Related with the same topic. You must attain the session till end, to get maximum benefits. All the important concepts will be discussed in detail.",
+                  "watch": "6M watch mins"
+                }
+              ]
+            }
+          ]
         },
         {
-            "id": "1d",
-            "JEE and NEET Preparation": [
+          "id": "1d",
+          "JEE and NEET Preparation": [
+            {
+              "id": "18",
+              "name": "IIT JEE",
+              "img": "https://static.uacdn.net/topology/TMUVD/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "18t1",
+                  "name": "Diksha Bhuwalaka",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+                  "subject": "SCIENCE",
+                  "title": "Lets Crack - Science- Teachers Day Special KBC - DB13",
+                  "end": "Sep 5 2021",
+                  "language": "ENGLISH",
+                  "desc": "In this session Diksha Bhuwalka Mam will take Important Topics and Poll Session on Fibre to Fabric with lots of Fun Activities in the class. The course will be helpful for aspirants preparing for CBSE Class 6. Learners at any stage of their preparation will be benefited from the course. Polls &amp; Quizzes will be conducted throughout the class.",
+                  "watch": "3M watch mins"
+                },
+                {
+                  "id": "18t2",
+                  "name": "Harshita Jain",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/e529fd3c71934a419c7964fe21908a48.png?q=100&w=512&fm=webp",
+                  "subject": "SCIENCE",
+                  "title": "Lets Crack - Science- Motion and Measurement of distanc - HJ05",
+                  "end": "Sep 27 2021",
+                  "language": "HINDI",
+                  "desc": "In this session, Harshita Jain will discuss about motion and measurement of distance . It will be helpful for the aspirants preparing for Class 6. This session will be conducted in Hindi and the notes will be provided in English.",
+                  "watch": "876K watch mins"
+                },
+                {
+                  "id": "18t3",
+                  "name": "Neha Saini",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/ff9b6bab7dd34f4bacc43f1bf21a4fa7.png?q=100&w=512&fm=webp",
+                  "subject": "SCIENCE",
+                  "title": "Lets Crack Science- Changes Around Us (Picture polls) - NS01",
+                  "end": "Sep 28 2021",
+                  "language": "HINDI",
+                  "desc": "In this class, Neha Saini will discuss Changes Around Us with polls and fun . It will be helpful for the aspirants preparing for CBSE 6 This class will be conducted in Hindi and the notes will be provided in English.",
+                  "watch": "5M watch mins"
+                },
+                {
+                  "id": "18t4",
+                  "name": "Ashmeet Kaur",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+                  "subject": "ENGLISH",
+                  "title": "Lets Crack English - Diary Entry Writing - AK28",
+                  "end": "Sep 5 2021",
+                  "language": "ENGLISH",
+                  "desc": "Do you know how to write an ideal diary-entry for your writing section of English exam and your new 2021 diary? Join this class by Ashmeet Ma'am to master this art of diary-entry writing.",
+                  "watch": "2M watch mins"
+                }
+              ]
+            },
+            {
+              "id": "19",
+              "name": "NEET UG",
+              "img": "https://static.uacdn.net/topology/YOTUH/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "19t1",
+                  "name": "Monika Bedi",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/7df8566ed37d4382a8799bcacf0676d7.png?q=100&w=512&fm=webp",
+                  "subject": "CHEMISTRY",
+                  "title": "Hydrogen: Part-1",
+                  "end": "Sep 22, 2021 • 1h 2m",
+                  "language": "HINDI",
+                  "desc": "Unlock Codes: MBLIVE or MONICA Dr Monica Bedi ma'am will be taking second part of Chapter Hydrogen of Class 11th in ongoing One Shot . Students at any stage of preparation will be benefited. Dear Students, dont miss the awesome session! Use Referral code MBLIVE for subscription for PLUS courses.",
+                  "watch": "18M watch mins"
+                },
+                {
+                  "id": "19t2",
+                  "name": "Monika Bedi",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/7df8566ed37d4382a8799bcacf0676d7.png?q=100&w=512&fm=webp",
+                  "subject": "CHEMISTRY",
+                  "title": "Hydrogen: Part-2",
+                  "end": "Sep 22, 2021 • 1h 4m",
+                  "language": "HINDI",
+                  "desc": "Unlock Codes: MBLIVE or MONICA Dr Monica Bedi ma'am will be taking second part of Chapter Hydrogen of Class 11th in ongoing One Shot . Students at any stage of preparation will be benefited. Dear Students, dont miss the awesome session! Use Referral code MBLIVE for subscription for PLUS courses.",
+                  "watch": "18M watch mins"
+                },
                 {
                     "id": "18",
                     "name": "IIT JEE",
@@ -1987,11 +2288,51 @@
                         }
                     ]
                 }
-            ]
+              ]
+            }
+          ]
         },
         {
-            "id": "1e",
-            "IITJEE/NEET Foundation & NTSE": [
+          "id": "1e",
+          "IITJEE/NEET Foundation & NTSE": [
+            {
+              "id": "20",
+              "name": "IITJEE, NEET Foundation & NTSE",
+              "img": "https://static.uacdn.net/topology/TPSBK/icon/origin.png?q=75&w=96",
+              "tutor": [
+                {
+                  "id": "20t1",
+                  "name": "Ashmeet Kaur",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/77812865af7449e9ad298c6309726273.png?q=100&w=512&fm=webp",
+                  "subject": "ENGLISH",
+                  "title": "Let's Crack English - Adverb - AK28",
+                  "end": "Sep 23, 2021 • 1h",
+                  "language": "ENGLISH",
+                  "desc": "Let's practice some comprehensions in this class by reading paragraphs and answering questions from the paragraph. This class will help you get better in 'Comprehensions' section of your English class.",
+                  "watch": "2M watch mins"
+                },
+                {
+                  "id": "20t2",
+                  "name": "Diksha Bhuwalaka",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+                  "subject": "SCIENCE",
+                  "title": "Let's Crack : CELLS : KBC Polls - Code DB13",
+                  "end": "Sep 25, 2021 • 1h 1m",
+                  "language": "ENGLISH",
+                  "desc": "In this session Diksha Bhuwalka Mam will take Important Topics and Poll Session on Cell - Structure &amp; Functions with lots of Fun Activities in the class. The course will be helpful for aspirants preparing for CBSE Class 6, 7, 8. Learners at any stage of their preparation will be benefited from the course. Polls &amp; Quizzes will be conducted throughout the class.",
+                  "watch": "3M watch mins"
+                },
+                {
+                  "id": "20t3",
+                  "name": "Neha Saini",
+                  "img": "https://edge.uacdn.net/static/thumbnail/course/ff9b6bab7dd34f4bacc43f1bf21a4fa7.png?q=100&w=512&fm=webp",
+                  "subject": "SCIENCE  ",
+                  "title": "Lets Crack - Science- Teachers Day Special KBC - DB13",
+                  "end": "Sep 26, 2021 • 1h",
+                  "language": "HINDI",
+                  "desc": "In this class, Neha Saini will discuss Crop Production and Management with polls and fun . It will be helpful for the aspirants preparing for CBSE 8 This class will be conducted in Hindi and the notes will be provided in English.",
+                  "watch": "5M watch mins"
+                },
                 {
                     "id": "20",
                     "name": "IITJEE, NEET Foundation & NTSE",
@@ -2087,7 +2428,11 @@
                         }
                     ]
                 }
-            ]
+              ]
+            }
+          ]
         }
-    ]
+      ]
+    }
+  ]
 }
