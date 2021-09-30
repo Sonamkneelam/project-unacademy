@@ -1020,6 +1020,125 @@
                             "rating":"5",
                             "before":" 6 months ago"
                         }
+                    ],
+                    "treding":[
+                        {
+                            "id": "9tttr1",
+                            "name": "Suresh Aggrawal",
+                            "subject": "Be a Mental Math Wizard - Level 1",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/5b7412dd14154ae9b1736be89fea72de.png?q=75&w=1920&fm=webp",
+                            "end": "Ended on Apr 28, 2021 • 8 lessons",
+                            "language": "HINDI",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        },
+                        {
+                            "id": "9tttr2",
+                            "name": "Satish Kumar",
+                            "subject": "Become a Financial Wizard!",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/56d86a8a8e3d4bba94961bbb459aef56.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 2, 2021 • 6 lessons",
+                            "language": "HINDI",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        },
+                        {
+                            "id": "9tttr3",
+                            "name": "Kusum Goyal",
+                            "subject": "Magic'o'clock: Code of Magicians!",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/CE7EB9DD-074B-44BE-8D6C-252F72895E8D_plus.png?q=75&w=1920&fm=webp",
+                            "starts": "Ended on nOV 28, 2020 • 9 lessons",
+                            "language": "ENGLISH",
+                            "desc": "ENTERTAINER'S CORNER"
+                        },
+                        {
+                            "id": "9tttr4",
+                            "name": "Karan Singh",
+                            "subject": "Basics of MAgic",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/a48dc6be3c334cfb9a691334fd86f22e.jpg?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Aug 18, 2021 • 12 lessons",
+                            "language": "HINGLISH",
+                            "desc": "ENTERTAINER'S CORNER"
+                        }
+                    ],
+                    "upcomming":[
+                        {
+                            "id": "9ttuc1",
+                            "name": "Suresh Aggrawal",
+                            "subject": "Vedik Maths Made Easy - Part I",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/5b7412dd14154ae9b1736be89fea72de.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 1, 2021 • 15 lessons",
+                            "language": "HINDI",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        },
+                        {
+                            "id": "9ttuc2",
+                            "name": "Satish Kumar",
+                            "subject": "Robotics Step By Step",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/26abe3db3d1549e98a5483ab17bca594.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 2, 2021 • 6 lessons",
+                            "language": "HINDI",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        },
+                        {
+                            "id": "9ttuc3",
+                            "name": "Kusum Goyal",
+                            "subject": "Victory Course on French Language for Beginners",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/CE7EB9DD-074B-44BE-8D6C-252F72895E8D_plus.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 2, 2021 • 8 lessons",
+                            "language": "HINDI",
+                            "desc": "ORATOR'S CORNER"
+                        },
+                        {
+                            "id": "9ttuc4",
+                            "name": "Suresh Aggrawal",
+                            "subject": "Understanding Chess Tactics",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/75931a2a3d244cc99832f639a1f9e7fe.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 4, 2021 • 6 lessons",
+                            "language": "HINGLISH",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        },
+                        {
+                            "id": "9ttuc5",
+                            "name": "Himanshu Arora",
+                            "subject": "Quick basic Course Stock Price Forcasting",
+                            "img": "https://edge.uacdn.net/static/thumbnail/course/332a88e16ac643129323839a4d8c4123.png?q=75&w=1920&fm=webp",
+                            "starts": "Starts on Oct 5, 2021 • 4 lessons",
+                            "language": "HINGLISH",
+                            "desc": "BEYOND SCHOOL SYLLABUS"
+                        }
+                    ],
+                    "featured":[
+                        {
+                            "id":"9ttfr1",
+                            "name":"Suhani Shah",
+                            "desc":"Magician • Mentalist •  Author • Budding streamer • Performing artist for over two decades",
+                            "img":"https://edge.uacdn.net/static/thumbnail/user/b261a3eee34c447cb1f591c2c3c57544.jpg?q=100&w=512&fm=webp",
+                            "Watch mins":"411K",
+                            "Followers":"3K"
+                        },
+                        {
+                            "id":"9ttfr2",
+                            "name":"Suresh Aggarwal",
+                            "desc":"An Educationist par excellence....I love numbers &amp; I always seek to handle them in most interesting way. Join me &amp; enjoy mathe-magic-fun.",
+                            "img":"https://edge.uacdn.net/static/thumbnail/user/079eb0dbaef746a28336f50d84942df8.jpg?q=100&w=512&fm=webp",
+                            "Watch mins":"821K",
+                            "Followers":"2K"
+                        },
+                        {
+                            "id":"9ttfr3",
+                            "name":"Himanshu Arora",
+                            "desc":"Appeared On Many Business Shows on TV Channels. Mentored 5000+ Candidates in Finance (Aged 10-80yrs). 10+yrs Of Teaching Experience.Awarded",
+                            "img":"https://edge.uacdn.net/static/thumbnail/user/ba230f76e06f402cab5a81c64553e1e7.jpg?q=100&w=512&fm=webp",
+                            "Watch mins":"168K",
+                            "Followers":"681"
+                        },
+                        {
+                            "id":"9ttfr4",
+                            "name":"Kusum Goyal",
+                            "desc":"French &amp; English Educator on Unacademy I M.COM I B.ED I 5 years of teaching experience I Use my Code KG31 to unlock free classes &amp; get 10% o",
+                            "img":"https://edge.uacdn.net/static/thumbnail/user/6a2cc4f0c0734b77b2152335d8ee1b5a.jpg?q=100&w=512&fm=webp",
+                            "Watch mins":"2M",
+                            "Followers":"5K"
+                        }
                     ]
                 }
             ]
