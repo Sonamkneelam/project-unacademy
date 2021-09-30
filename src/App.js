@@ -5,6 +5,7 @@ import BeforeHomePage from "./pages/BeforeHomePage";
 import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
 import { Goal } from "./pages/GoalPage";
+import WatchPage from "./pages/Watchpage";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
         </Route>
         <Route path='/goal/:name'>
           <Goal />
+        </Route>
+        <Route path='/watch'>
+          <WatchPage/>
         </Route>
         <Route>404</Route>
       </Switch>
