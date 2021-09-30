@@ -2,14 +2,13 @@ import styled from "styled-components";
 
 export const LoginCard = styled.div`
   position: absolute;
-  width: 617px;
+  width: 40.7%;
   height: 942px;
   right: 0px;
   top: 0px;
+  background: #7dd2e7;
 
   /* COLOUR BASE-1 */
-
-  background: #ffffff;
 
   .close-login-button {
     position: absolute;
@@ -43,7 +42,7 @@ export const LoginCard = styled.div`
   }
 
   .signup > span {
-      color: #08bd80;
+    color: #08bd80;
     border-bottom: 1px dashed #08bd80;
   }
 `;
