@@ -108,7 +108,7 @@ function BeforeHomePage() {
               </Link>
             </div>
           </div>
-          <div className="block3">
+          <div className='block3'>
             {block3adetails.map((el) => {
               return <HomeBlock3 {...el} />;
             })}
@@ -157,7 +157,7 @@ function BeforeHomePage() {
 
 const BeforeHomePageStyled = styled.div`
   /* border: 1px solid black; */
-  width: 90%;
+  width: 100%;
   margin: auto;
   .header {
     width: 80%;

@@ -22,7 +22,9 @@ const SideBar = styled.div`
   height: calc(100vh - 100px);
   padding-inline-start: 0px;
   overflow-y: auto;
-  /* border: 2px solid red; */
+  -webkit-font-smoothing: antialiased;
+  font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  overscroll-behavior: none;
 `;
 const Data = styled.div`
   grid-column: span 18 / auto;
@@ -41,37 +43,37 @@ const MockData = {
   cbse: [
     {
       id: "1",
-      name: "CBSC Class 6",
+      name: "CBSE Class 6",
       img: "https://static.uacdn.net/topology/k12_default.png?q=75&w=96",
     },
     {
       id: "2",
-      name: "CBSC Class 7",
+      name: "CBSE Class 7",
       img: "https://static.uacdn.net/topology/k12_default.png?q=75&w=96",
     },
     {
       id: "3",
-      name: "CBSC Class 8",
+      name: "CBSE Class 8",
       img: "https://static.uacdn.net/topology/k12_default.png?q=75&w=96",
     },
     {
       id: "4",
-      name: "CBSC Class 9",
+      name: "CBSE Class 9",
       img: "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
     },
     {
       id: "5",
-      name: "CBSC Class 10",
+      name: "CBSE Class 10",
       img: "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
     },
     {
       id: "6",
-      name: "CBSC Class 11",
+      name: "CBSE Class 11",
       img: "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
     },
     {
       id: "7",
-      name: "CBSC Class 12",
+      name: "CBSE Class 12",
       img: "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96",
     },
     {
@@ -150,7 +152,7 @@ const MockData = {
   ],
 };
 const LI = styled.div`
-  padding-bottom: 1.2rem;
+  padding-bottom: 12px;
   list-style-type: none;
   cursor: pointer;
 `;
@@ -164,7 +166,11 @@ const H4 = styled.h4`
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  color: #3c4852;
+  color: #7a8b94;
+  padding-bottom: 12px;
+  list-style-type: none;
+  cursor: pointer;
+  display: list-item;
 `;
 export const ExplorePage = () => {
   const [cbse, setCBSE] = React.useState([]);
@@ -186,7 +192,6 @@ export const ExplorePage = () => {
   React.useEffect(() => {
     fetchData();
   }, []);
-  console.log(cbse.CBS);
   return (
     <>
       <Top />
@@ -196,7 +201,9 @@ export const ExplorePage = () => {
             return (
               <LI id={id}>
                 <Link spy={true} smooth={true} to={to}>
-                  <H4 id='P'>{el}</H4>
+                  <H4 id='P' style={{ fontFamily: "AvertaStd-Regular" }}>
+                    {el}
+                  </H4>
                 </Link>
               </LI>
             );
