@@ -3,19 +3,20 @@ import CloseIcon from "@mui/icons-material/Close";
 import { ButtonCloseLogin } from "./ButtonCloseLogin";
 import { useState } from "react";
 import { firebase, auth } from "../../Configs/firebase";
-import { Redirect } from "react-router-dom";
+//import { Redirect } from "react-router-dom";
 import styles from "./LoginSign.module.css";
 import axios from "axios";
 
-export const Login = ({ handleLogin }) => {
+export const Login = ({ handleLogin, handleUser }) => {
   const [mynumber, setnumber] = useState("");
   const [otp, setotp] = useState("");
   const [show, setshow] = useState(false);
   const [final, setfinal] = useState("");
-  const [direct, setDirect] = useState(false);
+//  const [direct, setDirect] = useState(false);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [state, setState] = useState("");
+  const [login, setLogin] = useState(false);
 
   // Sent OTP
   const signin = () => {
@@ -49,13 +50,21 @@ export const Login = ({ handleLogin }) => {
       .then((result) => {
         console.log("result:", result);
         // success
-        axios.post("http://localhost:4000/users", payload);
-        setDirect(true);
+        if (login) {
+          handleUser(mynumber);
+        } else {
+          axios.post("http://localhost:4000/users", payload);
+
+          handleUser(mynumber);
+        }
+        //setDirect(true);
+        handleLogin();
       })
       .catch((err) => {
         alert("Wrong code");
       });
   };
+
   return (
     <LoginCard>
       <ButtonCloseLogin
@@ -130,39 +139,100 @@ export const Login = ({ handleLogin }) => {
                 Verify
               </button>
             </div>
-            {direct ? <Redirect to="/success"></Redirect> : ""}
+            {/* {direct ? <Redirect to="/success"></Redirect> : ""} */}
           </div>
         </>
       ) : (
         <>
-          <div className="login">Join Unacademy</div>
-          <div className="signup">
-            or <span>login to your account</span>
-          </div>
-          <div>
-            <input
-              className={styles.input}
-              type="text"
-              placeholder="Enter Mobile Number"
-              value={mynumber}
-              onChange={(e) => {
-                setnumber(e.target.value);
-              }}
-            />
-          </div>
-          <div className={styles.buttonContainer}>
-            <div className={styles.recaptcha} id="recaptcha-container"></div>
-            <button
-              className={styles.button}
-              style={{
-                backgroundColor: mynumber.length >= 10 ? "#08bd80" : "#e9eef2",
-                color: mynumber.length >= 10 ? "white" : "#6e7d85",
-              }}
-              onClick={signin}
-            >
-              Login
-            </button>
-          </div>
+          {login ? (
+            <>
+              <div className="login">Login</div>
+              <div className="signup">
+                or{" "}
+                <span
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    setLogin(!login);
+                    console.log(login);
+                  }}
+                >
+                  create your account
+                </span>
+              </div>
+              <div>
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="Enter Mobile Number"
+                  value={mynumber}
+                  onChange={(e) => {
+                    setnumber(e.target.value);
+                  }}
+                />
+              </div>
+              <div className={styles.buttonContainer}>
+                <div
+                  className={styles.recaptcha}
+                  id="recaptcha-container"
+                ></div>
+                <button
+                  className={styles.button}
+                  style={{
+                    backgroundColor:
+                      mynumber.length >= 10 ? "#08bd80" : "#e9eef2",
+                    color: mynumber.length >= 10 ? "white" : "#6e7d85",
+                  }}
+                  onClick={signin}
+                >
+                  Login
+                </button>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="login">Join Unacademy</div>
+              <div className="signup">
+                or{" "}
+                <span
+                  style={{ cursor: "pointer" }}
+                  onClick={() => {
+                    setLogin(!login);
+                    console.log(login);
+                  }}
+                >
+                  login to your account
+                </span>
+              </div>
+              <div>
+                <input
+                  className={styles.input}
+                  type="text"
+                  placeholder="Enter Mobile Number"
+                  value={mynumber}
+                  onChange={(e) => {
+                    setnumber(e.target.value);
+                  }}
+                />
+              </div>
+              <div className={styles.buttonContainer}>
+                <div
+                  className={styles.recaptcha}
+                  id="recaptcha-container"
+                ></div>
+                <button
+                  className={styles.button}
+                  style={{
+                    backgroundColor:
+                      mynumber.length >= 10 ? "#08bd80" : "#e9eef2",
+                    color: mynumber.length >= 10 ? "white" : "#6e7d85",
+                  }}
+                  onClick={signin}
+                >
+                  Login
+                </button>
+              </div>
+            </>
+          )}
         </>
       )}
     </LoginCard>
