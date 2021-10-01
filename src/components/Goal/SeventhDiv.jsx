@@ -10,44 +10,65 @@ export const SevenTH = ({ name }) => {
       <InnerDivElem>
         <InnerCard>
           <DivInner>
+            <NoOffer></NoOffer>
             <h4>1 month</h4>
-            <h2>₹3,000</h2>
+            <h2>₹ 3,000</h2>
             <p>Total (Incl. of all taxes)</p>
           </DivInner>
           <ButtonTag>Get subscription</ButtonTag>
         </InnerCard>
-        <InnerCard></InnerCard>
-        <InnerCard></InnerCard>
-        <InnerCard></InnerCard>
+        <InnerCard>
+          <DivInner>
+            <Offer>44% OFF</Offer>
+            <h4>3 month</h4>
+            <h2>₹ 6,000</h2>
+            <p>Total (Incl. of all taxes)</p>
+          </DivInner>
+          <ButtonTag>Get subscription</ButtonTag>
+        </InnerCard>
+        <InnerCard>
+          <DivInner>
+            <Offer>64% OFF</Offer>
+            <h4>6 month</h4>
+            <h2>₹ 7,999</h2>
+            <p>Total (Incl. of all taxes)</p>
+          </DivInner>
+          <ButtonTag>Get subscription</ButtonTag>
+        </InnerCard>
+        <InnerCard>
+          <DivInner>
+            <Offer>65% OFF</Offer>
+            <h4>9 month</h4>
+            <h2>₹ 9,999</h2>
+            <p>Total (Incl. of all taxes)</p>
+          </DivInner>
+          <ButtonTag>Get subscription</ButtonTag>
+        </InnerCard>
       </InnerDivElem>
     </MainDiv>
   );
 };
 
-const MainDiv = styled.div`
+export const MainDiv = styled.div`
   border-radius: 6px;
   margin: auto;
   width: 100%;
   max-width: 1136px;
-  margin: 76px auto;
+  margin: 70px auto;
   display: grid;
 `;
-const Helem = styled.div`
+export const Helem = styled.div`
   color: #3c4852;
   font-size: 40px;
   font-weight: bold;
-  font-size: 32px;
   line-height: 120%;
   margin: auto;
+  margin-bottom: 25px;
 `;
 
 const InnerDivElem = styled.div`
-  align-self: stretch;
   display: flex;
   flex-direction: row;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: stretch;
   margin-top: 64px;
 `;
 
@@ -57,8 +78,8 @@ const InnerCard = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  width: 211px;
-  height: 286px;
+  width: 271px;
+  height: 280px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 2px;
   padding: 25px 50px;
 `;
@@ -99,5 +120,28 @@ const ButtonTag = styled.div`
   border-radius: 6px;
   width: 176px;
   height: 48px;
-  color: green;
+  color: #08bd80;
+`;
+
+const Offer = styled.span`
+  background-color: rgb(255, 239, 216);
+  color: #ffad3b;
+  height: 22px;
+  width: 71px;
+  margin: auto;
+  margin-bottom: 10px;
+  font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 6px 8px;
+  border-radius: 4px;
+  display: inline-block;
+`;
+
+const NoOffer = styled.div`
+  height: 22px;
+  width: 71px;
+  display: inline-block;
+  padding: 6px 8px;
+  margin-bottom: 10px;
 `;

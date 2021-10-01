@@ -4406,5 +4406,35 @@
         }
       ]
     }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "title": "Pretty well, uniform, well-sorted, maintained standards, quality and quantity of courses and notes with stupendo-fantabulously mind blowing educators and amazing interface!",
+      "name": "Yash JB",
+      "add": "102,188 learning minutes • Creative Corner",
+      "time": "19 days ago"
+    },
+    {
+      "id": "r2",
+      "title": "the experience was amazing with the amazing teachers they helped us alot and i just want to say thank you so much",
+      "name": "RK NAVYA CHACHLANI",
+      "add": "29,828 learning minutes • Creative Corner",
+      "time": "1 month ago"
+    },
+    {
+      "id": "r3",
+      "title": "Today's class is so amazing... because today..only my two favourite teacher have taught me...💖..💖..... Alisha Arora ma'am 🖤..🖤 and Diksha Bhuwalka ma'am...💙..💙",
+      "name": "Naivedya",
+      "add": "24,461 learning minutes • Creative Corner",
+      "time": "2 months ago"
+    },
+    {
+      "id": "r4",
+      "title": "Everything is fine in cbse class 7 and creative corner but I would request you to add film making in entertainment cornere in creative corner Thanku The app is extremely good 👍 Keep it up",
+      "name": "Oshin Verma",
+      "add": "7,465 learning minutes • Creative Corner",
+      "time": "5 months ago"
+    }
   ]
 }
