@@ -4,7 +4,7 @@ import { SliderType2 } from "./Slider";
 import { Link } from "react-router-dom";
 import { MainDiv, InnerDiv, HeadingDiv, H3Elem, SeeAll } from "./FourDiv";
 
-export const FivthDiv = ({ title, desc }) => {
+export const FivthDiv = ({ title, desc, items }) => {
   return (
     <>
       <MainDiv>
@@ -15,12 +15,12 @@ export const FivthDiv = ({ title, desc }) => {
               <p>{desc}</p>
             </H3Elem>
             <SeeAll>
-              <Link to='/' style={{ textDecoration: "none" }}>
+              <Link to='/watch' style={{ textDecoration: "none" }}>
                 <h4 style={{ color: "#08bd80", fontSize: "24px" }}>See all</h4>
               </Link>
             </SeeAll>
           </HeadingDiv>
-          <SliderType2 />
+          <SliderType2 course={items} />
         </InnerDiv>
       </MainDiv>
     </>

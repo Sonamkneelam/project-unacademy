@@ -1,3 +1,5 @@
+/** @format */
+
 import styled from "styled-components";
 import HomeBlock3 from "../components/HomeBlock3";
 import Footer from "../components/Footer";
@@ -32,100 +34,100 @@ function BeforeHomePage() {
   ];
   return (
     <BeforeHomePageStyled>
-      <div className="header">
-        <div className="navbar">
+      <div className='header'>
+        <div className='navbar'>
           <img
-            src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256"
-            alt="logo"
+            src='https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256'
+            alt='logo'
           />
 
-          <button className="button">Login</button>
+          <button className='button'>Login</button>
         </div>
-        <div className="heading">
-          <div className="head">
+        <div className='heading'>
+          <div className='head'>
             India’s largest
             <br />
             learning platform
           </div>
-          <div className="course">
-            <div className="course1">
+          <div className='course'>
+            <div className='course1'>
               <img
-                src="https://static.uacdn.net/production/_next/static/images/home/test-prep-learning.svg?q=75&w=256"
-                alt="doll"
+                src='https://static.uacdn.net/production/_next/static/images/home/test-prep-learning.svg?q=75&w=256'
+                alt='doll'
               />
-              <div className="line1">Prepare for</div>
-              <div className="line2">Compitative exams</div>
-              <div className="line3">Popular goles</div>
-              <div className="line4">
+              <div className='line1'>Prepare for</div>
+              <div className='line2'>Compitative exams</div>
+              <div className='line3'>Popular goles</div>
+              <div className='line4'>
                 <div>UPSC CSE - GS</div>
                 <div>IIT JEE</div>
                 <div>NEET UG</div>
                 <div>Bank Exams</div>
               </div>
-              <div className="line5">
+              <div className='line5'>
                 <div>{"GATE & ESE"}</div>
                 <div>UPSC CSE - Optional</div>
               </div>
-              <Link to="/explore">
+              <Link to='/explore'>
                 <button>Start Learning</button>
               </Link>
             </div>
-            <div className="course1">
+            <div className='course1'>
               <img
-                src="https://static.uacdn.net/production/_next/static/images/home/test-prep-learning.svg?q=75&w=256"
-                alt="doll"
+                src='https://static.uacdn.net/production/_next/static/images/home/test-prep-learning.svg?q=75&w=256'
+                alt='doll'
               />
-              <div className="line1">Prepare for</div>
-              <div className="line2">Class 6 to 12</div>
-              <div className="line3">Popular boards</div>
-              <div className="line4">
+              <div className='line1'>Prepare for</div>
+              <div className='line2'>Class 6 to 12</div>
+              <div className='line3'>Popular boards</div>
+              <div className='line4'>
                 <div>CBSE</div>
                 <div>Maharashtra Board</div>
                 <div>Uttar Pradesh Board</div>
               </div>
-              <div className="line5">
+              <div className='line5'>
                 <div>Uttar Pradesh Board</div>
               </div>
-              <Link to="/explore">
+              <Link to='/explore'>
                 {" "}
                 <button>Start Learning</button>
               </Link>
             </div>
           </div>
-          <div className="block3">
+          <div className='block3'>
             {block3adetails.map((el) => {
               return <HomeBlock3 {...el} />;
             })}
           </div>
-          <div className="block4">
-            <div className="block41">
-              <div className="block411">
+          <div className='block4'>
+            <div className='block41'>
+              <div className='block411'>
                 Get the learning
                 <br /> app
               </div>
-              <div className="block412">
+              <div className='block412'>
                 Download lessons and learn anytime,
                 <br /> anywhere with the Unacademy app
               </div>
-              <div className="block413">
-                <a href="https://apps.apple.com/in/app/unacademy-learning-app/id1342565069?referrer%3Dutm_source%253DFooter%2526utm_medium%253DWebApp%2526utm_campaign%253DFooter%2526">
+              <div className='block413'>
+                <a href='https://apps.apple.com/in/app/unacademy-learning-app/id1342565069?referrer%3Dutm_source%253DFooter%2526utm_medium%253DWebApp%2526utm_campaign%253DFooter%2526'>
                   <img
-                    src="https://static.uacdn.net/production/_next/static/images/app_store.png?q=75&w=1920"
-                    alt="playstore"
+                    src='https://static.uacdn.net/production/_next/static/images/app_store.png?q=75&w=1920'
+                    alt='playstore'
                   />
                 </a>
-                <a href="https://play.google.com/store/apps/details?id=com.unacademyapp&referrer=utm_source%3DFooter%26utm_medium%3DWebApp%26utm_campaign%3DFooter%26">
+                <a href='https://play.google.com/store/apps/details?id=com.unacademyapp&referrer=utm_source%3DFooter%26utm_medium%3DWebApp%26utm_campaign%3DFooter%26'>
                   <img
-                    src="https://static.uacdn.net/production/_next/static/images/play_store.png?q=75&w=1920"
-                    alt="playstore"
+                    src='https://static.uacdn.net/production/_next/static/images/play_store.png?q=75&w=1920'
+                    alt='playstore'
                   />
                 </a>
               </div>
             </div>
-            <div className="block42">
+            <div className='block42'>
               <img
-                src="https://static.uacdn.net/production/_next/static/images/newApp.png?q=75&w=640"
-                alt="mobile"
+                src='https://static.uacdn.net/production/_next/static/images/newApp.png?q=75&w=640'
+                alt='mobile'
               />
             </div>
           </div>

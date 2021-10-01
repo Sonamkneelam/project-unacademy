@@ -4,8 +4,98 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
 import { Top } from "../components/ExplorePage/Top";
-import axios from "axios";
 import { DataComp } from "../components/ExplorePage/Data";
+import { TeacherData } from "../Utils/fetchData";
+
+export const ExplorePage = () => {
+  const [cbse, setCbse] = React.useState([]);
+  const [msb, setMsb] = React.useState([]);
+  const [usb, setUsb] = React.useState([]);
+  const [jee, setJee] = React.useState([]);
+  const [iit, setIit] = React.useState([]);
+
+  React.useEffect(() => {
+    TeacherData("CBSE").then((res) => {
+      setCbse(res.data);
+    });
+
+    TeacherData("MSB").then((res) => {
+      setMsb(res.data);
+    });
+    TeacherData("USB").then((res) => {
+      setUsb(res.data);
+    });
+    TeacherData("IIT").then((res) => {
+      setJee(res.data);
+    });
+    TeacherData("JEE").then((res) => {
+      setIit(res.data);
+    });
+  }, []);
+
+  return (
+    <>
+      <Top />
+      <MainDiv>
+        <SideBar>
+          {mockData.map(({ el, to, id }) => {
+            return (
+              <LI key={id} id={id}>
+                <Link spy={true} smooth={true} to={to} activeClass='active'>
+                  <H4 id='P'>
+                    <h4>{el}</h4>
+                  </H4>
+                </Link>
+              </LI>
+            );
+          })}
+        </SideBar>
+        <Data>
+          {cbse.length !== 0 ? (
+            <DataComp cat='CBSE' items={cbse} page='1a' name='CBSE' />
+          ) : (
+            false
+          )}
+          {msb.length !== 0 ? (
+            <DataComp
+              cat='MSB'
+              items={msb}
+              page='1b'
+              name='Maharashtra State Board'
+            />
+          ) : (
+            false
+          )}
+          {usb.length !== 0 ? (
+            <DataComp cat='USB' items={usb} page='1c' name='UP State Board' />
+          ) : (
+            false
+          )}
+          {jee.length !== 0 ? (
+            <DataComp
+              cat='JEE'
+              items={jee}
+              name='JEE and NEET Preparation'
+              page='1d'
+            />
+          ) : (
+            false
+          )}
+          {iit.length !== 0 ? (
+            <DataComp
+              cat='IIT'
+              items={iit}
+              name='IITJEE/NEET Foundation & NTSE'
+              page='1e'
+            />
+          ) : (
+            false
+          )}
+        </Data>
+      </MainDiv>
+    </>
+  );
+};
 
 const MainDiv = styled.div`
   /* border: 2px solid red; */
@@ -36,7 +126,7 @@ const mockData = [
   { el: "Maharashtra State Board", to: "MSB", id: 2 },
   { el: "Uttar Pradesh State Board", to: "USB", id: 3 },
   { el: "JEE and NEET Preparation", to: "JEE", id: 4 },
-  { el: "IITJEE/NEET Foundation & NTSE", to: "IIT", id: 4 },
+  { el: "IITJEE/NEET Foundation & NTSE", to: "IIT", id: 5 },
 ];
 
 const MockData = {
@@ -156,79 +246,28 @@ const LI = styled.div`
   list-style-type: none;
   cursor: pointer;
 `;
-const H4 = styled.h4`
-  line-height: 24px;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
-  font-family: AvertaStd-Bold;
-  font-size: 16px;
-  line-height: 19px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #7a8b94;
-  padding-bottom: 12px;
-  list-style-type: none;
-  cursor: pointer;
-  display: list-item;
+
+const H4 = styled.div`
+  & h4 {
+    line-height: 24px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #7a8b94;
+    padding-bottom: 12px;
+    list-style-type: none;
+    cursor: pointer;
+    display: list-item;
+  }
+  /* & h4:active {
+  } */
+  & .active {
+    color: black !important;
+    font-weight: normal;
+  }
 `;
-export const ExplorePage = () => {
-  const [cbse, setCBSE] = React.useState([]);
-  const [msb, setMSB] = React.useState([]);
-  const [usb, setUSB] = React.useState([]);
-  const [jee, setJEE] = React.useState([]);
-  const [iit, setIIT] = React.useState([]);
-
-  const fetchData = () => {
-    axios.get("http://localhost:3001/class").then((res) => {
-      setCBSE(res.data[0]);
-      setMSB(res.data[1]);
-      setUSB(res.data[2]);
-      setJEE(res.data[3]);
-      setIIT(res.data[4]);
-    });
-  };
-
-  React.useEffect(() => {
-    fetchData();
-  }, []);
-  return (
-    <>
-      <Top />
-      <MainDiv>
-        <SideBar>
-          {mockData.map(({ el, to, id }) => {
-            return (
-              <LI id={id}>
-                <Link spy={true} smooth={true} to={to}>
-                  <H4 id='P' style={{ fontFamily: "AvertaStd-Regular" }}>
-                    {el}
-                  </H4>
-                </Link>
-              </LI>
-            );
-          })}
-        </SideBar>
-        <Data>
-          <DataComp id='CBSE' items={MockData.cbse} name='CBSE' />
-          <DataComp
-            id='MSB'
-            items={MockData.MSB}
-            name='Maharashtra State Board'
-          />
-          <DataComp id='USB' items={MockData.USB} name='UP State Board' />
-          <DataComp
-            id='JEE'
-            items={MockData.JEE}
-            name='JEE and NEET Preparation'
-          />
-          <DataComp
-            id='IIT'
-            items={MockData.IIT}
-            name='IITJEE/NEET Foundation & NTSE'
-          />
-        </Data>
-      </MainDiv>
-    </>
-  );
-};
