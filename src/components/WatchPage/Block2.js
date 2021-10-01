@@ -3,9 +3,9 @@
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
-function Block2({ title1, title2 ,data}) {
+function Block2({ title1, title2, data, cat }) {
   const history = useHistory();
-  console.log(data)
+  console.log(data);
 
   return (
     <Block2Styled>
@@ -19,10 +19,15 @@ function Block2({ title1, title2 ,data}) {
         {data.map((el) => {
           return (
             <div className='main'>
-              <img  src={el.img} alt="people" className='img'/>
+              <img
+                onClick={() => history.push(`/crack/${cat}/${el.id}`)}
+                src={el.img}
+                alt='people'
+                className='img'
+              />
               <div className='main1'>
                 <div>{el.language}</div>
-                <div style={{color:"#2D81F7"}}>{el.desc}</div>
+                <div style={{ color: "#2D81F7" }}>{el.desc}</div>
               </div>
               <div className='main2'>{el.subject}</div>
               <div className='main3'>{el.starts}</div>
@@ -70,10 +75,11 @@ const Block2Styled = styled.div`
         height: 148px;
         width: 100%;
         border-radius: 6px 6px 0px 0px;
+        cursor: pointer;
       }
-      .main1{
+      .main1 {
         display: flex;
-        justify-content:space-around;
+        justify-content: space-around;
         margin-left: 17px;
         font-size: 12px;
         font-weight: bold;
