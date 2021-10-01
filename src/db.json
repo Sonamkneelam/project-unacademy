@@ -1045,15 +1045,6 @@
           "starts": "Ended on nOV 28, 2020 • 9 lessons",
           "language": "ENGLISH",
           "desc": "ENTERTAINER'S CORNER"
-        },
-        {
-          "id": "9tttr4",
-          "name": "Karan Singh",
-          "subject": "Basics of MAgic",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/a48dc6be3c334cfb9a691334fd86f22e.jpg?q=75&w=1920&fm=webp",
-          "starts": "Starts on Aug 18, 2021 • 12 lessons",
-          "language": "HINGLISH",
-          "desc": "ENTERTAINER'S CORNER"
         }
       ],
       "upcomming": [
@@ -1083,24 +1074,6 @@
           "starts": "Starts on Oct 2, 2021 • 8 lessons",
           "language": "HINDI",
           "desc": "ORATOR'S CORNER"
-        },
-        {
-          "id": "9ttuc4",
-          "name": "Suresh Aggrawal",
-          "subject": "Understanding Chess Tactics",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/75931a2a3d244cc99832f639a1f9e7fe.png?q=75&w=1920&fm=webp",
-          "starts": "Starts on Oct 4, 2021 • 6 lessons",
-          "language": "HINGLISH",
-          "desc": "BEYOND SCHOOL SYLLABUS"
-        },
-        {
-          "id": "9ttuc5",
-          "name": "Himanshu Arora",
-          "subject": "Quick basic Course Stock Price Forcasting",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/332a88e16ac643129323839a4d8c4123.png?q=75&w=1920&fm=webp",
-          "starts": "Starts on Oct 5, 2021 • 4 lessons",
-          "language": "HINGLISH",
-          "desc": "BEYOND SCHOOL SYLLABUS"
         }
       ],
       "featured": [

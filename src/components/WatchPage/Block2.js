@@ -3,8 +3,9 @@
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 
-function Block2({ title1, title2 }) {
+function Block2({ title1, title2 ,data}) {
   const history = useHistory();
+  console.log(data)
 
   return (
     <Block2Styled>
@@ -15,14 +16,17 @@ function Block2({ title1, title2 }) {
         </div>
       </div>
       <div className='two'>
-        {[1, 2, 3].map((el) => {
+        {data.map((el) => {
           return (
             <div className='main'>
-              <div className='img'></div>
-              <div className='main1'></div>
-              <div className='main2'>Sentence Structures For Spoken</div>
-              <div className='main3'>Sentence Structures For Spoken</div>
-              <div className='main4'>Sentence Structures For Spoken</div>
+              <img  src={el.img} alt="people" className='img'/>
+              <div className='main1'>
+                <div>{el.language}</div>
+                <div style={{color:"#2D81F7"}}>{el.desc}</div>
+              </div>
+              <div className='main2'>{el.subject}</div>
+              <div className='main3'>{el.starts}</div>
+              <div className='main4'>{el.name}</div>
             </div>
           );
         })}
@@ -66,6 +70,13 @@ const Block2Styled = styled.div`
         height: 148px;
         width: 100%;
         border-radius: 6px 6px 0px 0px;
+      }
+      .main1{
+        display: flex;
+        justify-content:space-around;
+        margin-left: 17px;
+        font-size: 12px;
+        font-weight: bold;
       }
       .main2 {
         margin-left: 17px;
