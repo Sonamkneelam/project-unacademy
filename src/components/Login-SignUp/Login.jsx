@@ -53,7 +53,7 @@ export const Login = ({ handleLogin, handleUser }) => {
         if (login) {
           handleUser(mynumber);
         } else {
-          axios.post("http://localhost:4000/users", payload);
+          axios.post("http://localhost:3001/users", payload);
 
           handleUser(mynumber);
         }
