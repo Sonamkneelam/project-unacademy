@@ -64,7 +64,7 @@ export const SeeAll = styled.div`
   display: inline-block;
   border-width: 0px 0px 1px;
   border-style: dashed;
-  width: 75px;
+  width: 78px;
   height: 30px;
   margin-top: 0;
 `;
@@ -87,7 +87,7 @@ export const FourthDiv = ({ items }) => {
               </Link>
             </SeeAll>
           </HeadingDiv>
-          <div id='slider'>
+          <div id='slider' style={{}}>
             <Slider items={items} />
           </div>
         </InnerDiv>

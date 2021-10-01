@@ -8,8 +8,12 @@ import YouTubeIcon from "@mui/icons-material/YouTube";
 import Block1 from "../components/WatchPage/Block1";
 import Footer from "../components/Footer";
 import Block2 from "../components/WatchPage/Block2";
+import data from "../db.json";
 
 function WatchPage() {
+  const trending = data.CBSE[8].treding;
+  const upcoming = data.CBSE[8].upcomming;
+
   return (
     <>
       <WatchPageStyled>
@@ -26,8 +30,18 @@ function WatchPage() {
         </div>
         <div className='two'>
           <Block1 />
-          <Block2 title1={"Trending"} title2={"See All"} />
-          <Block2 title1={"Upcoming"} title2={"See All"} />
+          <Block2
+            title1={"Trending"}
+            title2={"See All"}
+            data={trending}
+            cat='treding'
+          />
+          <Block2
+            title1={"Upcoming"}
+            title2={"See All"}
+            data={upcoming}
+            cat='upcomming'
+          />
         </div>
       </WatchPageStyled>
       <Footer />

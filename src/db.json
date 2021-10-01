@@ -1045,15 +1045,6 @@
           "starts": "Ended on nOV 28, 2020 • 9 lessons",
           "language": "ENGLISH",
           "desc": "ENTERTAINER'S CORNER"
-        },
-        {
-          "id": "9tttr4",
-          "name": "Karan Singh",
-          "subject": "Basics of MAgic",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/a48dc6be3c334cfb9a691334fd86f22e.jpg?q=75&w=1920&fm=webp",
-          "starts": "Starts on Aug 18, 2021 • 12 lessons",
-          "language": "HINGLISH",
-          "desc": "ENTERTAINER'S CORNER"
         }
       ],
       "upcomming": [
@@ -1083,24 +1074,6 @@
           "starts": "Starts on Oct 2, 2021 • 8 lessons",
           "language": "HINDI",
           "desc": "ORATOR'S CORNER"
-        },
-        {
-          "id": "9ttuc4",
-          "name": "Suresh Aggrawal",
-          "subject": "Understanding Chess Tactics",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/75931a2a3d244cc99832f639a1f9e7fe.png?q=75&w=1920&fm=webp",
-          "starts": "Starts on Oct 4, 2021 • 6 lessons",
-          "language": "HINGLISH",
-          "desc": "BEYOND SCHOOL SYLLABUS"
-        },
-        {
-          "id": "9ttuc5",
-          "name": "Himanshu Arora",
-          "subject": "Quick basic Course Stock Price Forcasting",
-          "img": "https://edge.uacdn.net/static/thumbnail/course/332a88e16ac643129323839a4d8c4123.png?q=75&w=1920&fm=webp",
-          "starts": "Starts on Oct 5, 2021 • 4 lessons",
-          "language": "HINGLISH",
-          "desc": "BEYOND SCHOOL SYLLABUS"
         }
       ],
       "featured": [
@@ -4414,6 +4387,36 @@
       "state": "Delhi",
       "number": "+918109351621",
       "id": 1
+    }
+  ],
+  "reviews": [
+    {
+      "id": "r1",
+      "title": "Pretty well, uniform, well-sorted, maintained standards, quality and quantity of courses and notes with stupendo-fantabulously mind blowing educators and amazing interface!",
+      "name": "Yash JB",
+      "add": "102,188 learning minutes • Creative Corner",
+      "time": "19 days ago"
+    },
+    {
+      "id": "r2",
+      "title": "the experience was amazing with the amazing teachers they helped us alot and i just want to say thank you so much",
+      "name": "RK NAVYA CHACHLANI",
+      "add": "29,828 learning minutes • Creative Corner",
+      "time": "1 month ago"
+    },
+    {
+      "id": "r3",
+      "title": "Today's class is so amazing... because today..only my two favourite teacher have taught me...💖..💖..... Alisha Arora ma'am 🖤..🖤 and Diksha Bhuwalka ma'am...💙..💙",
+      "name": "Naivedya",
+      "add": "24,461 learning minutes • Creative Corner",
+      "time": "2 months ago"
+    },
+    {
+      "id": "r4",
+      "title": "Everything is fine in cbse class 7 and creative corner but I would request you to add film making in entertainment cornere in creative corner Thanku The app is extremely good 👍 Keep it up",
+      "name": "Oshin Verma",
+      "add": "7,465 learning minutes • Creative Corner",
+      "time": "5 months ago"
     }
   ]
 }
