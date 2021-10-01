@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { Slider } from "./Slider";
+
 export const MainDiv = styled.div`
   height: 375px;
   border-radius: 6px;
@@ -12,8 +13,7 @@ export const MainDiv = styled.div`
   max-width: 1136px;
   margin: 76px auto;
   display: flexbox;
-  /* border: 2px solid purple; */
-  box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+  /* box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px; */
 `;
 export const InnerDiv = styled.div`
   width: 1136px;
