@@ -71,24 +71,23 @@ const Name = styled.p`
   white-space: nowrap;
   font-weight: 600;
 `;
-export const DataComp = ({ items, id, name }) => {
+export const DataComp = ({ items, cat, name, page }) => {
   const history = useHistory();
-
   return (
     <>
-      <DataDiv id={id}>
+      <DataDiv id={cat}>
         <ClassP>{name}</ClassP>
         <First>
           {items.map(({ id, name, img }) => {
             return (
-              <>
-                <Second key={id} onClick={() => history.push(`/goal/${name}`)}>
-                  <Image>
-                    <img src={img} alt='' />
-                  </Image>
-                  <Name>{name}</Name>
-                </Second>
-              </>
+              <Second
+                key={id}
+                onClick={() => history.push(`/goal/${page}/${cat}/${id}`)}>
+                <Image>
+                  <img src={img} alt='' />
+                </Image>
+                <Name>{name}</Name>
+              </Second>
             );
           })}
         </First>

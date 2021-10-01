@@ -2,8 +2,21 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 
-export const ThirdDiv = () => {
+export const ThirdDiv = ({ cat }) => {
+  const [data, setData] = React.useState([]);
+  const { page } = useParams();
+  console.log(page);
+  console.log(cat);
+
+  React.useEffect(() => {
+    return axios.get(`http://localhost:3001/class/${page}`).then((res) => {
+      setData(res.data);
+    });
+  }, []);
+
   return (
     <>
       {" "}

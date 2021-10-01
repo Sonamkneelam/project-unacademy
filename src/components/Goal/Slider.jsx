@@ -38,6 +38,7 @@ const ImageDiv = styled.div`
   box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
   width: 132px;
   padding: 24px 24px 24px 124px;
+  z-index: 1;
 `;
 
 const SecondDiv = styled.div`
@@ -58,7 +59,12 @@ export const Slider = () => {
         pagination={{ clickable: true }}>
         <SwiperSlide style={Slides}>
           <Image>
-            <ImageDiv></ImageDiv>
+            <ImageDiv>
+              <img
+                src="src='https://edge.uacdn.net/static/thumbnail/user/079eb0dbaef746a28336f50d84942df8.jpg?q=75&w=1920&fm=webp'"
+                alt=''
+              />
+            </ImageDiv>
             <SecondDiv></SecondDiv>
           </Image>
         </SwiperSlide>

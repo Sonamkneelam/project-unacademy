@@ -66,8 +66,6 @@ export const ButtonDiv = styled.div`
   font-weight: bold;
   color: white;
   border: none;
-  transition: box-shadow 300ms ease-in-out 0s, transform 300ms ease-in-out 0s,
-    background-color 300ms ease-in-out 0s;
   cursor: pointer;
 `;
 
@@ -87,7 +85,6 @@ export const InnerDiv2 = styled.div`
 export const FirstInnerDiv2 = styled.div`
   height: 409px;
   padding: 40px;
-  background-color: var(--color-base-1);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   border-radius: 12px;

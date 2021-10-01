@@ -64,7 +64,6 @@ const Button1 = styled.button`
   letter-spacing: 0.02857rem;
   font-size: 20px;
   font-weight: bold;
-  color: var(--color-text-primary);
   opacity: 1;
   background: transparent;
   border: none;
@@ -88,12 +87,11 @@ const Span = styled.span`
   height: 20px;
   left: 192px;
   top: 265px;
-  border-radius: nullpx;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0em;
   text-align: left;
-  font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif !important;
   letter-spacing: 1.5px;
 `;
 
@@ -118,14 +116,13 @@ export const Top = () => {
             <div style={thirdDiv}>
               <div style={{ display: "flex" }}>
                 <Button1
-                  onCLick={() => {
-                    setShowCat(false);
-                    console.log(showCat);
+                  onClick={() => {
+                    setShowCat(true);
                   }}>
                   <Span style={{ color: "#7A8B94" }}>Competitive Exams</Span>
                   {showCat ? <LineThrough></LineThrough> : true}
                 </Button1>
-                <Button1 onCLick={() => setShowCat(true)}>
+                <Button1 onClick={() => setShowCat(false)}>
                   <Span style={{ color: "#3C4852" }}>Class 6 to 12</Span>
                   {!showCat ? <LineThrough></LineThrough> : true}
                 </Button1>

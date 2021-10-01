@@ -5,6 +5,7 @@ import BeforeHomePage from "./pages/BeforeHomePage";
 import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
 import { Goal } from "./pages/GoalPage";
+import { CrackPage } from "./pages/CrackProblemPage";
 
 function App() {
   return (
@@ -16,12 +17,14 @@ function App() {
         <Route path='/explore'>
           <ExplorePage />
         </Route>
-        <Route path='/goal/:name'>
+        <Route path='/goal/:page/:cat/:id'>
           <Goal />
+        </Route>
+        <Route path='/crack'>
+          <CrackPage />
         </Route>
         <Route>404</Route>
       </Switch>
-      
     </div>
   );
 }
