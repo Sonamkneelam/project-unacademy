@@ -1,7 +1,6 @@
 {
-    "class": [
-        {
-            "id": "1a",
+
+
             "CBSE": [
                 {
                     "id": "1",
@@ -1141,11 +1140,9 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "id": "1b",
-            "Maharashtra State Board": [
+            ],
+
+            "MSB": [
                 {
                     "id": "10",
                     "name": "SSC Class 9",
@@ -1526,11 +1523,9 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "id": "1c",
-            "UP State Board": [
+            ],
+
+            "USB": [
                 {
                     "id": "14",
                     "name": "UP Board Class 9",
@@ -1911,11 +1906,9 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "id": "1d",
-            "JEE and NEET Preparation": [
+            ],
+
+            "JNP": [
                 {
                     "id": "18",
                     "name": "IIT JEE",
@@ -2106,11 +2099,9 @@
                         }
                     ]
                 }
-            ]
-        },
-        {
-            "id": "1e",
-            "IITJEE/NEET Foundation & NTSE": [
+            ],
+
+            "INFN": [
                 {
                     "id": "20",
                     "name": "IITJEE, NEET Foundation & NTSE",
@@ -2206,7 +2197,49 @@
                         }
                     ]
                 }
+            ],
+            "class": [
+                {
+                    "id": "1a",
+                    "CBSE": {
+                        "id": "cbse1",
+                        "name": "CBSC Class 6",
+                        "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
+                    }
+                },
+                {
+                    "id": "1b",
+                    "Maharashtra State Board": {
+                        "id": "msb1",
+                        "name": "SSC Class 9",
+                        "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                    }
+                },
+                {
+                    "id": "1c",
+                    "UP State Board": {
+                        "id": "usb1",
+                        "name": "UP Board Class 9",
+                        "img": "https://static.uacdn.net/topology/SUVLV/icon/origin.png?q=75&w=96"
+                    }
+                },
+                {
+                    "id": "1d",
+                    "JEE and NEET Preparation": {
+                        "id": "jnp1",
+                        "name": "IIT JEE",
+                        "img": "https://static.uacdn.net/topology/TMUVD/icon/origin.png?q=75&w=96"
+                    }
+                },
+                {
+                    "id": "1e",
+                    "IITJEE/NEET Foundation & NTSE": {
+                        "id": "infn1",
+                        "name": "IITJEE, NEET Foundation & NTSE",
+                        "img": "https://static.uacdn.net/topology/TPSBK/icon/origin.png?q=75&w=96"
+                    }
+                }
             ]
-        }
-    ]
+
+
 }
