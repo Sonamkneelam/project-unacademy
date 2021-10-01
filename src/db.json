@@ -3344,7 +3344,7 @@
                 },
                 {
                     "id": "1b",
-                    "Maharashtra State Board": [
+                    "MSB": [
                         {
                             "id": "10",
                             "name": "SSC Class 9",
@@ -3729,7 +3729,7 @@
                 },
                 {
                     "id": "1c",
-                    "UP State Board": [
+                    "USB": [
                         {
                             "id": "14",
                             "name": "UP Board Class 9",
@@ -4114,7 +4114,7 @@
                 },
                 {
                     "id": "1d",
-                    "JEE and NEET Preparation": [
+                    "JEE": [
                         {
                             "id": "18",
                             "name": "IIT JEE",
@@ -4309,7 +4309,7 @@
                 },
                 {
                     "id": "1e",
-                    "IITJEE/NEET Foundation & NTSE": [
+                    "IIT": [
                         {
                             "id": "20",
                             "name": "IITJEE, NEET Foundation & NTSE",
