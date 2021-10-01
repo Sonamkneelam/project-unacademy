@@ -28,7 +28,7 @@ export const ThirdDiv = ({ cat }) => {
             Experience Plus for free and start learning from the best
           </PElem>
           <SeeLink>
-            <Link to='/' style={{ textDecoration: "none" }}>
+            <Link to='/watch' style={{ textDecoration: "none" }}>
               <h4 style={{ color: "#08bd80", fontSize: "24px" }}>See all</h4>
             </Link>
           </SeeLink>

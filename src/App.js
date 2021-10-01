@@ -6,8 +6,16 @@ import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
 import { Goal } from "./pages/GoalPage";
 import { CrackPage } from "./pages/CrackProblemPage";
+import WatchPage from "./pages/Watchpage";
+import "./App.css";
+import { SchoolSyllabus } from "./components/SchoolSyllabus/SchoolSyllabus";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { auth } from "./Configs/firebase";
+import { AfterOtp } from "./components/Login-SignUp/AfterOtp";
 
 function App() {
+  const [user] = useAuthState(auth);
+  console.log("user:", user);
   return (
     <div>
       <Switch>
@@ -17,11 +25,20 @@ function App() {
         <Route path='/explore'>
           <ExplorePage />
         </Route>
-        <Route path='/goal/:page/:cat/:id'>
+        <Route path='/goal/:name'>
           <Goal />
         </Route>
         <Route path='/crack'>
           <CrackPage />
+        </Route>
+        <Route path='/watch'>
+          <WatchPage />
+        </Route>
+        <Route path='/sub'>
+          <SchoolSyllabus></SchoolSyllabus>
+        </Route>
+        <Route path='/success'>
+          <AfterOtp></AfterOtp>
         </Route>
         <Route>404</Route>
       </Switch>
