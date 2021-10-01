@@ -16,24 +16,21 @@ const Outer = styled.div`
 `;
 
 export const Goal = () => {
-  const { page, cat } = useParams();
-  console.log(cat);
+  const { cat, id } = useParams();
   const [data, setData] = React.useState([]);
-
   React.useEffect(() => {
-    TeacherData(page).then((res) => {
+    TeacherData(cat, id).then((res) => {
       setData(res.data[0]);
     });
   }, []);
 
-  console.log(data.tutor);
   return (
     <>
       <Outer>
-        <First />
+        <First name={data.name} />
         <Second />
-        <ThirdDiv items={data} cat={cat} />
-        <FourthDiv />
+        <ThirdDiv items={data.tutor} cat={cat} />
+        <FourthDiv items={data.topTut} />
         <FivthDiv
           title='Courses starting soon'
           desc='Enroll in upcoming courses that best suit your schedule and Creative Corner exam syllabus'

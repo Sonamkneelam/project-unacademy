@@ -25,7 +25,7 @@ function App() {
         <Route path='/explore'>
           <ExplorePage />
         </Route>
-        <Route path='/goal/:name'>
+        <Route path='/goal/:page/:cat/:id'>
           <Goal />
         </Route>
         <Route path='/crack'>

@@ -9,27 +9,27 @@ import { TeacherData } from "../Utils/fetchData";
 
 export const ExplorePage = () => {
   const [cbse, setCbse] = React.useState([]);
-  console.log(cbse);
   const [msb, setMsb] = React.useState([]);
   const [usb, setUsb] = React.useState([]);
   const [jee, setJee] = React.useState([]);
   const [iit, setIit] = React.useState([]);
 
   React.useEffect(() => {
-    TeacherData("1a").then((res) => {
+    TeacherData("CBSE").then((res) => {
       setCbse(res.data);
     });
-    TeacherData("1b").then((res) => {
-      setMsb(res.data[0]);
+
+    TeacherData("MSB").then((res) => {
+      setMsb(res.data);
     });
-    TeacherData("1c").then((res) => {
-      setUsb(res.data[0]);
+    TeacherData("USB").then((res) => {
+      setUsb(res.data);
     });
-    TeacherData("1d").then((res) => {
-      setJee(res.data[0]);
+    TeacherData("IIT").then((res) => {
+      setJee(res.data);
     });
-    TeacherData("1e").then((res) => {
-      setIit(res.data[0]);
+    TeacherData("JEE").then((res) => {
+      setIit(res.data);
     });
   }, []);
 
@@ -50,16 +50,16 @@ export const ExplorePage = () => {
             );
           })}
         </SideBar>
-        {/* <Data>
+        <Data>
           {cbse.length !== 0 ? (
-            <DataComp cat='CBSE' items={cbse.CBSE} page='1a' name='CBSE' />
+            <DataComp cat='CBSE' items={cbse} page='1a' name='CBSE' />
           ) : (
             false
           )}
           {msb.length !== 0 ? (
             <DataComp
               cat='MSB'
-              items={msb.MSB}
+              items={msb}
               page='1b'
               name='Maharashtra State Board'
             />
@@ -67,19 +67,14 @@ export const ExplorePage = () => {
             false
           )}
           {usb.length !== 0 ? (
-            <DataComp
-              cat='USB'
-              items={usb.USB}
-              page='1c'
-              name='UP State Board'
-            />
+            <DataComp cat='USB' items={usb} page='1c' name='UP State Board' />
           ) : (
             false
           )}
           {jee.length !== 0 ? (
             <DataComp
               cat='JEE'
-              items={jee.JEE}
+              items={jee}
               name='JEE and NEET Preparation'
               page='1d'
             />
@@ -89,14 +84,14 @@ export const ExplorePage = () => {
           {iit.length !== 0 ? (
             <DataComp
               cat='IIT'
-              items={iit.IIT}
+              items={iit}
               name='IITJEE/NEET Foundation & NTSE'
               page='1e'
             />
           ) : (
             false
           )}
-        </Data> */}
+        </Data>
       </MainDiv>
     </>
   );
@@ -258,7 +253,7 @@ const H4 = styled.div`
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
-    font-family: AvertaStd-Bold;
+    font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0em;

@@ -68,7 +68,7 @@ export const SeeAll = styled.div`
   height: 30px;
   margin-top: 0;
 `;
-export const FourthDiv = () => {
+export const FourthDiv = ({ items }) => {
   return (
     <>
       <MainDiv>
@@ -88,7 +88,7 @@ export const FourthDiv = () => {
             </SeeAll>
           </HeadingDiv>
           <div id='slider'>
-            <Slider />
+            <Slider items={items} />
           </div>
         </InnerDiv>
       </MainDiv>

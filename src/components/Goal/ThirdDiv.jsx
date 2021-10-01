@@ -5,21 +5,9 @@ import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 
-export const ThirdDiv = ({ cat }) => {
-  const [data, setData] = React.useState([]);
-  const { page } = useParams();
-  console.log(page);
-  console.log(cat);
-
-  React.useEffect(() => {
-    return axios.get(`http://localhost:3001/class/${page}`).then((res) => {
-      setData(res.data);
-    });
-  }, []);
-
+export const ThirdDiv = ({ items }) => {
   return (
     <>
-      {" "}
       <Third>
         <Third1>
           <Span>Free</Span>
@@ -39,26 +27,20 @@ export const ThirdDiv = ({ cat }) => {
             height: "100%",
             display: "flex",
           }}>
-          <TEachSlide>
-            <TeachSlide1></TeachSlide1>
-            <TeachSlide2>
-              <Belem>Simple robot in 60 minutes</Belem>
-              <TimeVideo>Ended on Oct 18, 2020</TimeVideo>
-              <H3Temp>Sairaj Babu</H3Temp>
-            </TeachSlide2>
-          </TEachSlide>
-          <TEachSlide>
-            <TeachSlide1></TeachSlide1>
-            <TeachSlide2></TeachSlide2>
-          </TEachSlide>
-          <TEachSlide>
-            <TeachSlide1></TeachSlide1>
-            <TeachSlide2></TeachSlide2>
-          </TEachSlide>
-          <TEachSlide>
-            <TeachSlide1></TeachSlide1>
-            <TeachSlide2></TeachSlide2>
-          </TEachSlide>
+          {items?.map((el) => {
+            return (
+              <TEachSlide id={el.id}>
+                <TeachSlide1>
+                  <img src={el.img} alt='' />
+                </TeachSlide1>
+                <TeachSlide2>
+                  <Belem>{el.title}</Belem>
+                  <TimeVideo>{el.end}</TimeVideo>
+                  <H3Temp>{el.name}</H3Temp>
+                </TeachSlide2>
+              </TEachSlide>
+            );
+          })}
         </Third1>
       </Third>
     </>
@@ -133,6 +115,7 @@ const SeeLink = styled.div`
 const TEachSlide = styled.div`
   display: flex;
   margin: auto;
+  cursor: pointer;
 `;
 const TeachSlide1 = styled.div`
   height: 107px;
@@ -140,27 +123,29 @@ const TeachSlide1 = styled.div`
   left: 0px;
   top: 0px;
   border-radius: 2px;
-  border: 2px solid red;
+
+  & img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 const TeachSlide2 = styled.div`
   height: 107px;
-  width: 255.3px;
-  left: 132.7px;
-  top: 0px;
-  border: 2px solid red;
+  width: 343px;
   padding: 0px 15px;
 `;
 const Belem = styled.p`
-  position: static;
-  width: 207.31px;
-  height: 17px;
-  display: flex;
+  height: 30px;
   margin: 5px 0px;
   font-weight: 650;
   color: #3c4852;
+  word-wrap: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 `;
 const TimeVideo = styled.p`
-  position: static;
   left: calc(50% - 146px / 2 - 30.65px);
   top: 96.15%;
   bottom: -61.54%;
@@ -169,7 +154,7 @@ const TimeVideo = styled.p`
 `;
 const H3Temp = styled.p`
   position: static;
-  width: 87px;
+
   left: calc(50% - 87px / 2);
   top: 48.48%;
   bottom: 0%;
