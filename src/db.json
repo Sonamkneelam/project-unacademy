@@ -6,97 +6,7 @@
         {
           "id": "1",
           "name": "CBSC Class 6",
-          "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96",
-          "tutor": [
-            {
-              "id": "1t1",
-              "name": "Diksha Bhuwalaka",
-              "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
-              "subject": "SCIENCE",
-              "title": "Lets Crack - Science- Teachers Day Special KBC - DB13",
-              "end": "Sep 5 2021",
-              "language": "ENGLISH",
-              "desc": "In this session Diksha Bhuwalka Mam will take Important Topics and Poll Session on Fibre to Fabric with lots of Fun Activities in the class. The course will be helpful for aspirants preparing for CBSE Class 6. Learners at any stage of their preparation will be benefited from the course. Polls &amp; Quizzes will be conducted throughout the class.",
-              "watch": "3M watch mins"
-            },
-            {
-              "id": "1t2",
-              "name": "Harshita Jain",
-              "img": "https://edge.uacdn.net/static/thumbnail/course/e529fd3c71934a419c7964fe21908a48.png?q=100&w=512&fm=webp",
-              "subject": "SCIENCE",
-              "title": "Lets Crack - Science- Motion and Measurement of distanc - HJ05",
-              "end": "Sep 27 2021",
-              "language": "HINDI",
-              "desc": "In this session, Harshita Jain will discuss about motion and measurement of distance . It will be helpful for the aspirants preparing for Class 6. This session will be conducted in Hindi and the notes will be provided in English.",
-              "watch": "876K watch mins"
-            },
-            {
-              "id": "1t3",
-              "name": "Neha Saini",
-              "img": "https://edge.uacdn.net/static/thumbnail/course/ff9b6bab7dd34f4bacc43f1bf21a4fa7.png?q=100&w=512&fm=webp",
-              "subject": "SCIENCE",
-              "title": "Lets Crack Science- Changes Around Us (Picture polls) - NS01",
-              "end": "Sep 28 2021",
-              "language": "HINDI",
-              "desc": "In this class, Neha Saini will discuss Changes Around Us with polls and fun . It will be helpful for the aspirants preparing for CBSE 6 This class will be conducted in Hindi and the notes will be provided in English.",
-              "watch": "5M watch mins"
-            },
-            {
-              "id": "1t4",
-              "name": "Ashmeet Kaur",
-              "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
-              "subject": "ENGLISH",
-              "title": "Lets Crack English - Diary Entry Writing - AK28",
-              "end": "Sep 5 2021",
-              "language": "ENGLISH",
-              "desc": "Do you know how to write an ideal diary-entry for your writing section of English exam and your new 2021 diary? Join this class by Ashmeet Ma'am to master this art of diary-entry writing.",
-              "watch": "2M watch mins"
-            }
-          ],
-          "topTut": [
-            {
-              "id": "1tt1",
-              "name": "Neha Saini",
-              "desc": "Science Educator ll M.Sc (Physics),B.Ed | NEET(Physics) Doubt Solving Educator |7+ years Experience of Class 6th-12th, referral code : NS01",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/c32a025d4f174cbaa2adb9e8d916dace.jpg?q=75&w=1920&fm=webp",
-              "teach": "Teaches Science and 70 more"
-            },
-            {
-              "id": "1tt2",
-              "name": "Ashmeet Kaur",
-              "desc": "English Educator | B.C.A. & B.Ed | 4+ years of offline & online teaching experience  | Online Teaching Certification | Referral code: AK28",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/411debf8b3fd429397d86edd656b28ea.png?q=75&w=1920&fm=webp",
-              "teach": "Teaches English and 5 more"
-            },
-            {
-              "id": "1tt3",
-              "name": "Prashant Nikam",
-              "desc": "Mathematics Educator | M.Sc. | 7+ yrs Teaching Experience | Qualified in Various State Level Competitive Exams | Referral Code PN10 |",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/d73e319cc5484bb586a988784f49642a.jpg?q=75&w=1920&fm=webp",
-              "teach": "Teaches Mathematics and 50 more"
-            },
-            {
-              "id": "1tt4",
-              "name": "Arima Chaturvedi",
-              "desc": "Social Studies Educator | B. Arch | BA (history majors) | 3+ years of teaching experience | An experienced UD of NASA (arch) | Code- ARI10",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/f5b7b2a915964db8b400036ad40f9d70.jpg?q=100&w=512&fm=webp",
-              "teach": "Teaches Geography and 16 more"
-            },
-            {
-              "id": "1tt5",
-              "name": "Diksha Bhuwalka",
-              "desc": "Science Educator| Postgraduate | 10 years Experience in Education | Awarded by St. Xavier's Univ. for Online Teaching | Referral Code《DB13",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/3af0f8d24eb342dabe110c05b27694c7.jpg?q=75&w=1920&fm=webp",
-              "teach": "Teaches Science and 57 more"
-            },
-            {
-              "id": "1tt6",
-              "name": "Shubhkarman Kaur",
-              "desc": "Mathematics Educator ||B.Ed. Certified || 2+ years of teaching experience || CTET & PSTET Qualified|| Referral Code SK16||",
-              "img": "https://edge.uacdn.net/static/thumbnail/user/e7e5dcf0701241fa995ab60878ef5dd5.jpg?q=75&w=1920&fm=webp",
-              "teach": "Teaches Enviromental Science and 57 more"
-            }
-          ]
+          "img": "https://static.uacdn.net/topology/k12_default.png?q=75&w=96"
         },
         {
           "id": "2",
@@ -1141,8 +1051,99 @@
             }
           ]
         }
+      ],
+      "tutor": [
+        {
+          "id": "1t1",
+          "name": "Diksha Bhuwalaka",
+          "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+          "subject": "SCIENCE",
+          "title": "Lets Crack - Science- Teachers Day Special KBC - DB13",
+          "end": "Sep 5 2021",
+          "language": "ENGLISH",
+          "desc": "In this session Diksha Bhuwalka Mam will take Important Topics and Poll Session on Fibre to Fabric with lots of Fun Activities in the class. The course will be helpful for aspirants preparing for CBSE Class 6. Learners at any stage of their preparation will be benefited from the course. Polls &amp; Quizzes will be conducted throughout the class.",
+          "watch": "3M watch mins"
+        },
+        {
+          "id": "1t2",
+          "name": "Harshita Jain",
+          "img": "https://edge.uacdn.net/static/thumbnail/course/e529fd3c71934a419c7964fe21908a48.png?q=100&w=512&fm=webp",
+          "subject": "SCIENCE",
+          "title": "Lets Crack - Science- Motion and Measurement of distanc - HJ05",
+          "end": "Sep 27 2021",
+          "language": "HINDI",
+          "desc": "In this session, Harshita Jain will discuss about motion and measurement of distance . It will be helpful for the aspirants preparing for Class 6. This session will be conducted in Hindi and the notes will be provided in English.",
+          "watch": "876K watch mins"
+        },
+        {
+          "id": "1t3",
+          "name": "Neha Saini",
+          "img": "https://edge.uacdn.net/static/thumbnail/course/ff9b6bab7dd34f4bacc43f1bf21a4fa7.png?q=100&w=512&fm=webp",
+          "subject": "SCIENCE",
+          "title": "Lets Crack Science- Changes Around Us (Picture polls) - NS01",
+          "end": "Sep 28 2021",
+          "language": "HINDI",
+          "desc": "In this class, Neha Saini will discuss Changes Around Us with polls and fun . It will be helpful for the aspirants preparing for CBSE 6 This class will be conducted in Hindi and the notes will be provided in English.",
+          "watch": "5M watch mins"
+        },
+        {
+          "id": "1t4",
+          "name": "Ashmeet Kaur",
+          "img": "https://edge.uacdn.net/static/thumbnail/course/dc65b4c1f2a5499285b3ac6779f2d38c.png?q=100&w=512&fm=webp",
+          "subject": "ENGLISH",
+          "title": "Lets Crack English - Diary Entry Writing - AK28",
+          "end": "Sep 5 2021",
+          "language": "ENGLISH",
+          "desc": "Do you know how to write an ideal diary-entry for your writing section of English exam and your new 2021 diary? Join this class by Ashmeet Ma'am to master this art of diary-entry writing.",
+          "watch": "2M watch mins"
+        }
+      ],
+      "topTut": [
+        {
+          "id": "1tt1",
+          "name": "Neha Saini",
+          "desc": "Science Educator ll M.Sc (Physics),B.Ed | NEET(Physics) Doubt Solving Educator |7+ years Experience of Class 6th-12th, referral code : NS01",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/c32a025d4f174cbaa2adb9e8d916dace.jpg?q=75&w=1920&fm=webp",
+          "teach": "Teaches Science and 70 more"
+        },
+        {
+          "id": "1tt2",
+          "name": "Ashmeet Kaur",
+          "desc": "English Educator | B.C.A. & B.Ed | 4+ years of offline & online teaching experience  | Online Teaching Certification | Referral code: AK28",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/411debf8b3fd429397d86edd656b28ea.png?q=75&w=1920&fm=webp",
+          "teach": "Teaches English and 5 more"
+        },
+        {
+          "id": "1tt3",
+          "name": "Prashant Nikam",
+          "desc": "Mathematics Educator | M.Sc. | 7+ yrs Teaching Experience | Qualified in Various State Level Competitive Exams | Referral Code PN10 |",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/d73e319cc5484bb586a988784f49642a.jpg?q=75&w=1920&fm=webp",
+          "teach": "Teaches Mathematics and 50 more"
+        },
+        {
+          "id": "1tt4",
+          "name": "Arima Chaturvedi",
+          "desc": "Social Studies Educator | B. Arch | BA (history majors) | 3+ years of teaching experience | An experienced UD of NASA (arch) | Code- ARI10",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/f5b7b2a915964db8b400036ad40f9d70.jpg?q=100&w=512&fm=webp",
+          "teach": "Teaches Geography and 16 more"
+        },
+        {
+          "id": "1tt5",
+          "name": "Diksha Bhuwalka",
+          "desc": "Science Educator| Postgraduate | 10 years Experience in Education | Awarded by St. Xavier's Univ. for Online Teaching | Referral Code《DB13",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/3af0f8d24eb342dabe110c05b27694c7.jpg?q=75&w=1920&fm=webp",
+          "teach": "Teaches Science and 57 more"
+        },
+        {
+          "id": "1tt6",
+          "name": "Shubhkarman Kaur",
+          "desc": "Mathematics Educator ||B.Ed. Certified || 2+ years of teaching experience || CTET & PSTET Qualified|| Referral Code SK16||",
+          "img": "https://edge.uacdn.net/static/thumbnail/user/e7e5dcf0701241fa995ab60878ef5dd5.jpg?q=75&w=1920&fm=webp",
+          "teach": "Teaches Enviromental Science and 57 more"
+        }
       ]
     },
+
     {
       "id": "1b",
       "MSB": [

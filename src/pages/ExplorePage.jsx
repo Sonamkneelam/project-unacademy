@@ -13,6 +13,7 @@ export const ExplorePage = () => {
   const [usb, setUsb] = React.useState([]);
   const [jee, setJee] = React.useState([]);
   const [iit, setIit] = React.useState([]);
+  
   React.useEffect(() => {
     TeacherData("1a").then((res) => {
       setCbse(res.data[0]);

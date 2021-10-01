@@ -26,7 +26,7 @@ export const Goal = () => {
     });
   }, []);
 
-  // console.log(data.CBSE);
+  console.log(data.tutor);
   return (
     <>
       <Outer>
