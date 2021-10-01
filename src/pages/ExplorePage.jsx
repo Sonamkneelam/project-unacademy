@@ -9,14 +9,15 @@ import { TeacherData } from "../Utils/fetchData";
 
 export const ExplorePage = () => {
   const [cbse, setCbse] = React.useState([]);
+  console.log(cbse);
   const [msb, setMsb] = React.useState([]);
   const [usb, setUsb] = React.useState([]);
   const [jee, setJee] = React.useState([]);
   const [iit, setIit] = React.useState([]);
-  
+
   React.useEffect(() => {
     TeacherData("1a").then((res) => {
-      setCbse(res.data[0]);
+      setCbse(res.data);
     });
     TeacherData("1b").then((res) => {
       setMsb(res.data[0]);
@@ -49,7 +50,7 @@ export const ExplorePage = () => {
             );
           })}
         </SideBar>
-        <Data>
+        {/* <Data>
           {cbse.length !== 0 ? (
             <DataComp cat='CBSE' items={cbse.CBSE} page='1a' name='CBSE' />
           ) : (
@@ -95,7 +96,7 @@ export const ExplorePage = () => {
           ) : (
             false
           )}
-        </Data>
+        </Data> */}
       </MainDiv>
     </>
   );
