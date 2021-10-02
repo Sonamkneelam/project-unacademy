@@ -11,7 +11,6 @@ import WatchPage from "./pages/Watchpage";
 import { SchoolSyllabus } from "./components/SchoolSyllabus/SchoolSyllabus";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./Configs/firebase";
-import { AfterOtp } from "./components/Login-SignUp/AfterOtp";
 // import LoadingBar from "react-top-loading-bar";
 
 function App() {
@@ -42,9 +41,7 @@ function App() {
         <Route path="/sub">
           <SchoolSyllabus></SchoolSyllabus>
         </Route>
-        <Route path="/success">
-          <AfterOtp></AfterOtp>
-        </Route>
+
         <Route>404</Route>
       </Switch>
     </div>

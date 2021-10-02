@@ -6,7 +6,7 @@ import { FirstComp } from "../components/CrackingProblem/FirstComp";
 import { CauroselDiv } from "../components/CrackingProblem/Carousel";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+//import axios from "axios";
 import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 export const CrackPage = () => {
@@ -19,12 +19,12 @@ export const CrackPage = () => {
 
   return (
     <>
-      <SchoolSyllabus />
+      <SchoolSyllabus cat={cat} courseId={id} />
       <Outer>
         <FirstComp cat={cat} id={id} />
-        <CauroselDiv title='Similar Classes' />
-        <CauroselDiv title='More From Suresh Aggarwal' />
-        <CauroselDiv title='Similar Plus Cources' />
+        <CauroselDiv title="Similar Classes" />
+        <CauroselDiv title="More From Suresh Aggarwal" />
+        <CauroselDiv title="Similar Plus Cources" />
       </Outer>
       <Footer />
     </>
