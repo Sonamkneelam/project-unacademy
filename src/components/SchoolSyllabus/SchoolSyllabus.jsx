@@ -19,7 +19,7 @@ export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const handleUserDetails = async () => {
     const { data } = await axios.get("http://localhost:3001/users");
     const [userDetails] = data.filter((e) => e.number === user);
-    console.log("userDetails:", userDetails);
+    //console.log("userDetails:", userDetails);
     // console.log("data:", data);
     handleUserId(userDetails.id);
     const courseDetails = {
