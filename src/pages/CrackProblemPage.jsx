@@ -5,12 +5,18 @@ import styled from "styled-components";
 import { FirstComp } from "../components/CrackingProblem/FirstComp";
 import { CauroselDiv } from "../components/CrackingProblem/Carousel";
 import Footer from "../components/Footer";
+import { useState } from "react";
 import { useParams } from "react-router-dom";
 //import axios from "axios";
 import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 export const CrackPage = () => {
   const { cat, id } = useParams();
+  const [userId, setUserId] = useState(0);
+  const handleUserId = (e) => {
+    console.log("e:", e);
+    setUserId(e);
+  };
   // const [data, setData] = React.useState([]);
 
   // React.useEffect(() => {
@@ -19,7 +25,7 @@ export const CrackPage = () => {
 
   return (
     <>
-      <SchoolSyllabus cat={cat} courseId={id} />
+      <SchoolSyllabus cat={cat} courseId={id} handleUserId={handleUserId} />
       <Outer>
         <FirstComp cat={cat} id={id} />
         <CauroselDiv title="Similar Classes" />
