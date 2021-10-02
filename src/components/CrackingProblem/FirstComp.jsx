@@ -1,10 +1,11 @@
 /** @format */
 import React from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { Link , useHistory} from "react-router-dom";
 import axios from "axios";
 
 export const FirstComp = ({ data, cat, id }) => {
+  const history = useHistory();
   const [pageData, setPageData] = React.useState([]);
 
   React.useEffect(() => {
@@ -93,7 +94,7 @@ export const FirstComp = ({ data, cat, id }) => {
           </ThirdSecond>
         </Third>
         <Fourth>
-          <FourthButton>
+          <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}>
             <div style={{ marginRight: "8px", display: "flex" }}>
               <img src='./images/play.svg' alt='' />
             </div>
