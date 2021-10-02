@@ -9,9 +9,9 @@ import { Goal } from "./pages/GoalPage";
 import { CrackPage } from "./pages/CrackProblemPage";
 import { LivePage } from "./pages/LivePage";
 import WatchPage from "./pages/Watchpage";
-import { SchoolSyllabus } from "./components/SchoolSyllabus/SchoolSyllabus";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./Configs/firebase";
+import { Navbar } from "./components/Navbar/Navbar";
 // import LoadingBar from "react-top-loading-bar";
 
 function App() {
@@ -39,12 +39,12 @@ function App() {
         <Route path="/watch">
           <WatchPage />
         </Route>
-        <Route path='/live'>
+        <Route path="/live">
           <LivePage />
         </Route>
-        <Route path="/sub">
-          <SchoolSyllabus></SchoolSyllabus>
-        </Route>
+        {/* <Route path="/sub">
+          <Navbar></Navbar>
+        </Route> */}
 
         <Route>404</Route>
       </Switch>
