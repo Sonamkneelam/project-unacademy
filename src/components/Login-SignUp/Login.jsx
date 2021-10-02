@@ -27,7 +27,7 @@ export const Login = ({ handleLogin, handleUser }) => {
       .signInWithPhoneNumber(mynumber, verify)
       .then((result) => {
         setfinal(result);
-        alert("code sent");
+       // alert("code sent");
         setshow(true);
       })
       .catch((err) => {
