@@ -12,12 +12,31 @@ export const School = styled.div`
     margin: auto;
     /* border: 1px solid red; */
     padding: 1.5%;
+    height: 88px;
+    box-sizing: border-box;
+    display: flex;
+
+    align-items: center;
   }
   .navbar {
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    align-items: center;
     /* background-color: azure; */
+  }
+
+  .navbar > div:nth-child(1) {
+    display: flex;
+    font-size: 20px;
+    width: 35%;
+  }
+
+  .navbar > div:nth-child(1) > div {
+    margin: 0 0 0 3%;
+    padding: 0 3%;
+    border-left: 1px solid #e9eef2;
   }
   .button {
     width: 7%;
@@ -28,5 +47,12 @@ export const School = styled.div`
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
+  }
+
+  .account {
+    display: flex;
+    width: 7%;
+    justify-content: space-between;
+    align-items: center;
   }
 `;
