@@ -5,17 +5,19 @@ import styled from "styled-components";
 import { FirstComp } from "../components/CrackingProblem/FirstComp";
 import { CauroselDiv } from "../components/CrackingProblem/Carousel";
 import Footer from "../components/Footer";
-import { useState } from "react";
 import { useParams } from "react-router-dom";
-//import axios from "axios";
+import axios from "axios";
 import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
+import { useContext } from "react";
+import { UserContext } from "../Contexts/UserContext";
+import { useState } from "react";
 
 export const CrackPage = () => {
   const { cat, id } = useParams();
-  const [userId, setUserId] = useState(0);
+
+  const { handleChange } = useContext(UserContext);
   const handleUserId = (e) => {
-    console.log("e:", e);
-    setUserId(e);
+    handleChange(e);
   };
   // const [data, setData] = React.useState([]);
 
