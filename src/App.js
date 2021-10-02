@@ -28,7 +28,10 @@ function App() {
         <Route path='/goal/:page/:cat/:id'>
           <Goal />
         </Route>
-        <Route path='/crack'>
+        <Route path='/crack/:cat/:id' exact>
+          <CrackPage />
+        </Route>
+        <Route path='/crack/' exact>
           <CrackPage />
         </Route>
         <Route path='/watch'>

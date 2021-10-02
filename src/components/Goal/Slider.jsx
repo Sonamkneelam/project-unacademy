@@ -121,7 +121,7 @@ export const SliderType2 = ({ course }) => {
           navigation>
           {course?.map((el) => {
             return (
-              <SwiperSlide style={slider2}>
+              <SwiperSlide key={el.id} style={slider2}>
                 <Image>
                   <ImageDiv2>
                     <img src={el.img} alt='' />
@@ -234,4 +234,123 @@ const SecondDiv2 = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding: 6px 10px;
+`;
+
+export const SliderType3 = ({ review }) => {
+  console.log(review);
+  return (
+    <>
+      <MainDiv2 style={{ marginTop: "25px" }}>
+        <Swiper
+          id='swi'
+          modules={[Navigation, Pagination, Scrollbar, EffectFade]}
+          spaceBetween={20}
+          slidesPerView={1.5}
+          slidesPerGroup={1}
+          navigation>
+          {review?.map((el) => {
+            return (
+              <SwiperSlide key={el.id} style={SliderInner}>
+                <SwiperInnerMat>
+                  <SwiperFirst>
+                    <img src='/images/Comma.svg' alt='' />
+                    <img src='/images/Comma.svg' alt='' />
+                  </SwiperFirst>
+                  <h5>{el.title}</h5>
+
+                  <div id='star'>
+                    <h4>{el.name}</h4>
+                    <Star>
+                      <img src='/images/Star.svg' alt='' />
+                      <img src='/images/Star.svg' alt='' />
+                      <img src='/images/Star.svg' alt='' />
+                      <img src='/images/Star.svg' alt='' />
+                      <img src='/images/Star.svg' alt='' />
+                    </Star>
+                  </div>
+                  <div id='time'>
+                    <p>{el.add}</p>
+                    <p>{el.time}</p>
+                  </div>
+                </SwiperInnerMat>
+              </SwiperSlide>
+            );
+          })}
+        </Swiper>
+      </MainDiv2>
+    </>
+  );
+};
+
+const Star = styled.div`
+  width: 120px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  justify-content: space-between;
+  & img {
+    width: 20px;
+    height: 20px;
+  }
+`;
+const MainDiv2 = styled.div`
+  display: flex;
+  height: 274px;
+  display: flex;
+  align-items: center;
+
+  & #swi {
+    display: flex;
+    align-items: center;
+    height: 241px;
+  }
+`;
+
+const SliderInner = {
+  width: "662px",
+  height: "241px",
+  display: "flex",
+  boxShadow: "0px 14px 50px rgba(0, 0, 0, 0.05);",
+};
+
+const SwiperFirst = styled.div`
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 5px;
+`;
+
+const SwiperInnerMat = styled.div`
+  width: 85%;
+  margin: auto;
+  & #star {
+    display: flex;
+    justify-content: space-between;
+  }
+  & #time {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    line-height: 150%;
+    color: #7a8b94;
+    margin-top: 4px;
+  }
+  & h5 {
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 15px;
+    color: #000000;
+  }
+  & h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    margin-top: 20px;
+  }
+  & p {
+    font-size: 16px;
+    line-height: 150%;
+    color: #7a8b94;
+    margin-top: 4px;
+  }
 `;

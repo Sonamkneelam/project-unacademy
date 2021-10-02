@@ -10,7 +10,9 @@ import { FourthDiv } from "../components/Goal/FourDiv";
 import { FivthDiv } from "../components/Goal/Five";
 import { SixthDiv } from "../components/Goal/SixThDiv";
 import { SevenTH } from "../components/Goal/SeventhDiv";
+import { Reviews } from "../components/Goal/Reviews";
 import { TeacherData } from "../Utils/fetchData";
+import Footer from "../components/Footer.js";
 import axios from "axios";
 
 const Outer = styled.div`
@@ -61,7 +63,65 @@ export const Goal = () => {
         />
         <SixthDiv comp={comp} />
         <SevenTH name={data.name} />
+        <OfferLine>
+          <p>
+            <img src='/images/UpArrow.svg' alt='' /> Special offer price valid
+            only till 27th September 2021
+          </p>
+        </OfferLine>
+        <Ques>
+          <h4>
+            Have questions? <SPan>Read our FAQs</SPan>
+          </h4>
+        </Ques>
+        <Reviews />
+        <Footer />
       </Outer>
     </>
   );
 };
+const OfferLine = styled.div`
+  max-width: 100%;
+  height: 70px;
+  background-color: #ffdae1;
+  width: 100%;
+  max-width: 1136px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  border-radius: 5px;
+  & p {
+    margin: auto;
+    color: #c53d3d;
+    display: flex;
+    align-items: center;
+  }
+  & img {
+    margin-right: 5px;
+  }
+`;
+
+const Ques = styled.div`
+  max-width: 100%;
+  height: 70px;
+  width: 100%;
+  max-width: 1136px;
+  margin: auto;
+  margin-bottom: 50px;
+  display: flex;
+  & h4 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 150%;
+    color: #3c4852;
+    margin: auto;
+  }
+`;
+
+const SPan = styled.span`
+  border-color: #08bd80;
+  border-width: 0px 0px 1px;
+  border-style: dashed;
+  color: #08bd80;
+  cursor: pointer;
+`;

@@ -29,7 +29,7 @@ export const ThirdDiv = ({ items }) => {
           }}>
           {items?.map((el) => {
             return (
-              <TEachSlide id={el.id}>
+              <TEachSlide key={el.id}>
                 <TeachSlide1>
                   <img src={el.img} alt='' />
                 </TeachSlide1>
@@ -109,7 +109,7 @@ const SeeLink = styled.div`
   display: inline-block;
   border-width: 0px 0px 1px;
   border-style: dashed;
-  width: 75px;
+  width: 78px;
   height: 30px;
 `;
 const TEachSlide = styled.div`

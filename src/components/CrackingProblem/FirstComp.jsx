@@ -2,13 +2,33 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-export const FirstComp = () => {
+import axios from "axios";
+
+export const FirstComp = ({ data, cat, id }) => {
+  const [pageData, setPageData] = React.useState([]);
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      axios.get(`http://localhost:3001/CBSE/9/`).then((res) => {
+        if (cat === "treding") {
+          const { treding } = res.data;
+          let aD = treding.filter((el) => id === el.id);
+          setPageData(aD[0]);
+        } else {
+          const { upcomming } = res.data;
+          let aD2 = upcomming.filter((el) => id === el.id);
+          setPageData(aD2[0]);
+        }
+      });
+    }, 200);
+  }, []);
+
   return (
     <>
       <InnerDiv>
         <First>
           <FirstInnerDiv>
-            <Link to='/' style={LinkStyle}>
+            <Link to='/watch' style={LinkStyle}>
               <Button>
                 <Span>
                   <img src='./images/arrow.svg' alt='' />
@@ -29,16 +49,12 @@ export const FirstComp = () => {
         </Second>
         <Third>
           <ThirdFirst>
-            <H1Elem>Cracking Problems on Clocks</H1Elem>
+            <H1Elem>{pageData.subject}</H1Elem>
             <PTag>
               <p id=''>Sep 14, 2021 • 1h 2m </p>
             </PTag>
             <FollowTag>
-              <img
-                id='one'
-                src='https://static.uacdn.net/thumbnail/user/jpeg/w768/079eb0dbaef746a28336f50d84942df8.jpeg'
-                alt=''
-              />
+              <img id='one' src={pageData.img} alt='' />
               <FOllowLink>
                 <div
                   style={{
@@ -48,7 +64,7 @@ export const FirstComp = () => {
                     alignItems: "center",
                     color: "#3C4852",
                   }}>
-                  <h4 style={{ marginRight: "5px" }}>Suresh Aggarwal </h4>
+                  <h4 style={{ marginRight: "5px" }}>{pageData.name}</h4>
                   <img src='./images/Check.svg' alt='' />
                 </div>
                 <p
@@ -72,10 +88,7 @@ export const FirstComp = () => {
           </ThirdFirst>
           <ThirdSecond>
             <ThirdSImage>
-              <img
-                src='https://edge.uacdn.net/static/thumbnail/course/d6a8b2c99b8240039a12c15a200d2d6b.png?q=100&w=512'
-                alt=''
-              />
+              <img src={pageData.img} alt='' />
             </ThirdSImage>
           </ThirdSecond>
         </Third>
@@ -111,10 +124,9 @@ const InnerDiv = styled.div`
   display: flex;
   flex-direction: column;
   border-radius: 8px;
-  max-width: 1040px !important;
+  /* max-width: 1040px !important; */
   margin-bottom: 32px;
   margin: auto;
-  min-height: calc(100vh - 384px);
 `;
 
 const First = styled.div`
