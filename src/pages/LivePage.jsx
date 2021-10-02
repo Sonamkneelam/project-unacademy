@@ -7,10 +7,12 @@ import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
 import axios from "axios";
 import  LiveClass  from "../components/Live/LiveClass";
+import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 export const LivePage = () => {
   const { cat, id } = useParams();
   const [data, setData] = React.useState([]);
+  console.log(SchoolSyllabus)
 
   React.useEffect(() => {
     axios.get(`http://localhost:3001/CBSE/9/`).then((res) => setData(res.data));
