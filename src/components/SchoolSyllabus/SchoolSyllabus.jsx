@@ -7,7 +7,7 @@ import { School } from "./School";
 import axios from "axios";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
-export const SchoolSyllabus = ({ cat, courseId }) => {
+export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState("");
   console.log("user:", user);
@@ -21,6 +21,7 @@ export const SchoolSyllabus = ({ cat, courseId }) => {
     const [userDetails] = data.filter((e) => e.number === user);
     console.log("userDetails:", userDetails);
     // console.log("data:", data);
+    handleUserId(userDetails.id);
     const courseDetails = {
       board: "CBSE",
       boardId: 9,
