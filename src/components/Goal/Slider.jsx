@@ -4,6 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
+
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
@@ -212,7 +213,7 @@ const slider2 = {
   width: "280px",
   height: "140px",
   display: "flex",
-  boxShadow: "rgb(0 0 0 / 10%) 0px 4px 12px",
+  // boxShadow: "rgb(0 0 0 / 10%) 0px 4px 12px",
 };
 const ImageDiv2 = styled.div`
   max-width: 250px;
@@ -237,7 +238,6 @@ const SecondDiv2 = styled.div`
 `;
 
 export const SliderType3 = ({ review }) => {
-  console.log(review);
   return (
     <>
       <MainDiv2 style={{ marginTop: "25px" }}>
@@ -354,3 +354,25 @@ const SwiperInnerMat = styled.div`
     margin-top: 4px;
   }
 `;
+
+export const SliderType4 = ({ course }) => {
+  console.log(course);
+  return (
+    <div style={slider2}>
+      <Image>
+        <ImageDiv2>
+          <img src={course.img} alt='' />
+        </ImageDiv2>
+        <SecondDiv2>
+          <FirstSD>
+            <Span1>{course.language}</Span1>
+            <Span2>{course.desc}</Span2>
+          </FirstSD>
+          <FirstSh2>{course.subject}</FirstSh2>
+          <PDiv>{course.starts}</PDiv>
+          <PDiv2>{course.name}</PDiv2>
+        </SecondDiv2>
+      </Image>
+    </div>
+  );
+};
