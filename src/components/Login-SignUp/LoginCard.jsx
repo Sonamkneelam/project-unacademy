@@ -8,7 +8,7 @@ export const LoginCard = styled.div`
   top: 0px;
   padding: 0% 3%;
   box-sizing: border-box;
-  background: #7dd2e7;
+  background: #FFFFFF;
   z-index: 5;
 
   /* COLOUR BASE-1 */

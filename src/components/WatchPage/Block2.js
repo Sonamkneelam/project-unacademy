@@ -39,11 +39,11 @@ function Block2({ title1, title2, data, cat }) {
 }
 
 const Block2Styled = styled.div`
-  border: 1px solid black;
+  /* border: 1px solid black; */
   margin-top: 64px;
   height: 390px;
   .one {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     height: 30px;
@@ -51,15 +51,17 @@ const Block2Styled = styled.div`
       font-size: 24px;
       font-weight: bold;
       color: #3c4852;
+      cursor: pointer;
     }
     .text2 {
       font-size: 24px;
       font-weight: bold;
       color: #08bd80;
+      cursor: pointer;
     }
   }
   .two {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 72px;
     height: 288px;
     display: grid;
@@ -69,7 +71,7 @@ const Block2Styled = styled.div`
       box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
       border-radius: 6px;
       .img {
-        border: 1px solid pink;
+        /* border: 1px solid pink; */
         height: 148px;
         width: 100%;
         border-radius: 6px 6px 0px 0px;
