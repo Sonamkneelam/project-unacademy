@@ -7,6 +7,7 @@ import { Route, Switch } from "react-router-dom";
 import { ExplorePage } from "./pages/ExplorePage";
 import { Goal } from "./pages/GoalPage";
 import { CrackPage } from "./pages/CrackProblemPage";
+import { LivePage } from "./pages/LivePage";
 import WatchPage from "./pages/Watchpage";
 import { SchoolSyllabus } from "./components/SchoolSyllabus/SchoolSyllabus";
 import { useAuthState } from "react-firebase-hooks/auth";
@@ -37,6 +38,9 @@ function App() {
         </Route>
         <Route path="/watch">
           <WatchPage />
+        </Route>
+        <Route path='/live'>
+          <LivePage />
         </Route>
         <Route path="/sub">
           <SchoolSyllabus></SchoolSyllabus>
