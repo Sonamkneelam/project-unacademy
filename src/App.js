@@ -11,7 +11,7 @@ import { LivePage } from "./pages/LivePage";
 import WatchPage from "./pages/Watchpage";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./Configs/firebase";
-import { Navbar } from "./components/Navbar/Navbar";
+//import { Navbar } from "./components/Navbar/Navbar";
 // import LoadingBar from "react-top-loading-bar";
 
 function App() {

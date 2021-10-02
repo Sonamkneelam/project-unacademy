@@ -1,10 +1,10 @@
 /** @format */
 import React from "react";
 import styled from "styled-components";
-import { Link , useHistory} from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 
-export const FirstComp = ({ data, cat, id }) => {
+export const FirstComp = ({ data, cat, id, userId }) => {
   const history = useHistory();
   const [pageData, setPageData] = React.useState([]);
 
@@ -29,10 +29,10 @@ export const FirstComp = ({ data, cat, id }) => {
       <InnerDiv>
         <First>
           <FirstInnerDiv>
-            <Link to='/watch' style={LinkStyle}>
+            <Link to="/watch" style={LinkStyle}>
               <Button>
                 <Span>
-                  <img src='./images/arrow.svg' alt='' />
+                  <img src="./images/arrow.svg" alt="" />
                 </Span>
               </Button>
             </Link>
@@ -52,10 +52,10 @@ export const FirstComp = ({ data, cat, id }) => {
           <ThirdFirst>
             <H1Elem>{pageData.subject}</H1Elem>
             <PTag>
-              <p id=''>Sep 14, 2021 • 1h 2m </p>
+              <p id="">Sep 14, 2021 • 1h 2m </p>
             </PTag>
             <FollowTag>
-              <img id='one' src={pageData.img} alt='' />
+              <img id="one" src={pageData.img} alt="" />
               <FOllowLink>
                 <div
                   style={{
@@ -64,9 +64,10 @@ export const FirstComp = ({ data, cat, id }) => {
                     webkitBoxAlign: "center",
                     alignItems: "center",
                     color: "#3C4852",
-                  }}>
+                  }}
+                >
                   <h4 style={{ marginRight: "5px" }}>{pageData.name}</h4>
-                  <img src='./images/Check.svg' alt='' />
+                  <img src="./images/Check.svg" alt="" />
                 </div>
                 <p
                   style={{
@@ -75,7 +76,8 @@ export const FirstComp = ({ data, cat, id }) => {
                     lineHeight: "150%",
                     margin: "0px",
                     color: "#3C4852",
-                  }}>
+                  }}
+                >
                   819K watch mins
                 </p>
               </FOllowLink>
@@ -89,26 +91,26 @@ export const FirstComp = ({ data, cat, id }) => {
           </ThirdFirst>
           <ThirdSecond>
             <ThirdSImage>
-              <img src={pageData.img} alt='' />
+              <img src={pageData.img} alt="" />
             </ThirdSImage>
           </ThirdSecond>
         </Third>
         <Fourth>
           <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}>
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src='./images/play.svg' alt='' />
+              <img src="./images/play.svg" alt="" />
             </div>
             Watch Now
           </FourthButton>
           <FourthButton2>
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src='./images/viewpdf.svg' alt='' />
+              <img src="./images/viewpdf.svg" alt="" />
             </div>
             View Pdf
           </FourthButton2>
           <FourthButton2>
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src='./images/share.svg' alt='' />
+              <img src="./images/share.svg" alt="" />
             </div>
             Share
           </FourthButton2>
