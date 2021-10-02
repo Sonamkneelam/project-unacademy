@@ -51,11 +51,11 @@ export const Goal = () => {
           title='Courses starting soon'
           desc='Enroll in upcoming courses that best suit your schedule and Creative Corner exam syllabus'
         />
-        {/* <FivthDiv
+        <FivthDiv
           items={recent}
           title='Recently started courses'
           desc='Start learning live from the best of our ongoing courses'
-        /> */}
+        />
         <FivthDiv
           items={best}
           title='Best of all time'

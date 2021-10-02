@@ -3,10 +3,13 @@ import styled from "styled-components";
 export const LoginCard = styled.div`
   position: absolute;
   width: 40.7%;
-  height: 942px;
+  height: 100vh;
   right: 0px;
   top: 0px;
+  padding: 0% 3%;
+  box-sizing: border-box;
   background: #7dd2e7;
+  z-index: 5;
 
   /* COLOUR BASE-1 */
 
@@ -18,6 +21,7 @@ export const LoginCard = styled.div`
     bottom: 2%;
     width: 24px;
     height: 24px;
+    max-width: 24px;
     cursor: pointer;
   }
 
@@ -25,6 +29,7 @@ export const LoginCard = styled.div`
     position: absolute;
     width: 513px;
     height: 49px;
+    max-width: 513px;
     left: 52px;
     top: 70px;
     font-family: AvertaStd-Bold;
@@ -38,7 +43,7 @@ export const LoginCard = styled.div`
     width: 513px;
     height: 49px;
     left: 52px;
-    top: 120px;
+    top: 16%;
   }
 
   .signup > span {

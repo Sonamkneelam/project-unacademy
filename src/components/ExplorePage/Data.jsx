@@ -1,7 +1,31 @@
 /** @format */
 import styled from "styled-components";
-import { Link, Redirect } from "react-router-dom";
 import { useHistory } from "react-router-dom";
+
+export const DataComp = ({ items, cat, name, page }) => {
+  const history = useHistory();
+  return (
+    <>
+      <DataDiv id={cat}>
+        <ClassP>{name}</ClassP>
+        <First>
+          {items.map(({ id, name, img }) => {
+            return (
+              <Second
+                key={id}
+                onClick={() => history.push(`/goal/${page}/${cat}/${id}`)}>
+                <Image>
+                  <img src={img} alt='' />
+                </Image>
+                <Name>{name}</Name>
+              </Second>
+            );
+          })}
+        </First>
+      </DataDiv>
+    </>
+  );
+};
 
 const DataDiv = styled.div`
   padding-bottom: 35px;
@@ -71,27 +95,3 @@ const Name = styled.p`
   white-space: nowrap;
   font-weight: 600;
 `;
-export const DataComp = ({ items, cat, name, page }) => {
-  const history = useHistory();
-  return (
-    <>
-      <DataDiv id={cat}>
-        <ClassP>{name}</ClassP>
-        <First>
-          {items.map(({ id, name, img }) => {
-            return (
-              <Second
-                key={id}
-                onClick={() => history.push(`/goal/${page}/${cat}/${id}`)}>
-                <Image>
-                  <img src={img} alt='' />
-                </Image>
-                <Name>{name}</Name>
-              </Second>
-            );
-          })}
-        </First>
-      </DataDiv>
-    </>
-  );
-};

@@ -26,9 +26,9 @@ export const SixthDiv = ({ comp }) => {
             </SeeAll>
           </HeadingDiv>
           <InnerDiv2>
-            {comp?.map((el) => {
+            {comp?.map((el, index) => {
               return (
-                <InnerDivs key={el.id}>
+                <InnerDivs key={el.id} color={colors[index]}>
                   <InnerDivs2>
                     <InnerDiv21>
                       <InnerDiv22>
@@ -61,7 +61,7 @@ const InnerDivs = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1 0 auto;
-  border-left: 8px solid rgb(0, 179, 179);
+  border-left: 8px solid ${(props) => props.color};
   padding: 24px 24px 24px 16px;
 `;
 
@@ -106,3 +106,5 @@ const PtagInnerTag = styled.p`
   line-height: 150%;
   margin: 0px;
 `;
+
+const colors = ["#21c5c6", "#2D81F7", "#F08FB4", "#FFAD3B"];
