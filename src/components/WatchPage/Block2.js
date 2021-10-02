@@ -5,8 +5,6 @@ import { useHistory } from "react-router-dom";
 
 function Block2({ title1, title2, data, cat }) {
   const history = useHistory();
-  console.log(data);
-
   return (
     <Block2Styled>
       <div className='one'>

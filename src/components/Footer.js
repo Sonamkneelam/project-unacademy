@@ -129,6 +129,9 @@ function Footer() {
 
 const FooterStyled = styled.div`
   /* border: 1px solid blue; */
+  max-width: 1366px;
+  width: 100%;
+  margin: auto;
   margin-top: 105px;
   height: 212px;
   .outer {

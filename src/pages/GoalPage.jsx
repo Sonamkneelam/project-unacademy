@@ -12,6 +12,7 @@ import { SixthDiv } from "../components/Goal/SixThDiv";
 import { SevenTH } from "../components/Goal/SeventhDiv";
 import { Reviews } from "../components/Goal/Reviews";
 import { TeacherData } from "../Utils/fetchData";
+import Footer from "../components/Footer.js";
 import axios from "axios";
 
 const Outer = styled.div`
@@ -74,6 +75,7 @@ export const Goal = () => {
           </h4>
         </Ques>
         <Reviews />
+        <Footer />
       </Outer>
     </>
   );
