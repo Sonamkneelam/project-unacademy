@@ -1,6 +1,6 @@
 /** @format */
 import React from "react";
-import { SliderType2 } from "./Slider";
+import { SliderType2, SliderType4 } from "./Slider";
 import { Link } from "react-router-dom";
 import { MainDiv, InnerDiv, HeadingDiv, H3Elem, SeeAll } from "./FourDiv";
 
@@ -20,7 +20,11 @@ export const FivthDiv = ({ title, desc, items }) => {
               </Link>
             </SeeAll>
           </HeadingDiv>
-          <SliderType2 course={items} />
+          {items.length === 1 ? (
+            <SliderType4 course={items[0]} />
+          ) : (
+            <SliderType2 course={items} />
+          )}
         </InnerDiv>
       </MainDiv>
     </>
