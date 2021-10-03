@@ -4,49 +4,59 @@ import styled from "styled-components";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
 import { UserContext } from "../../Contexts/UserContext";
+import LoadingBar from "react-top-loading-bar";
 
-export const FirstComp = ({ data, cat, id, userId }) => {
+export const FirstComp = ({ cat, id, setDetail }) => {
   const history = useHistory();
+  const ref = React.useRef(null);
   const [pageData, setPageData] = React.useState([]);
   const { setModalData, user } = useContext(UserContext);
   // console.log(user, "##)")
   const handleLoginEvent = () => {
-    if(user == 0){
+    if (user === 0) {
       // console.log(user , "00000")
-      setModalData()
-    }
-    else{
-      history.push(`/live/${cat}/${id}`)
+      setModalData();
+    } else {
+      history.push(`/live/${cat}/${id}`);
       // console.log(user , "500000")
     }
-  }
-useEffect(() => {})
+  };
+  useEffect(() => {});
 
   React.useEffect(() => {
+    ref.current.continuousStart();
     setTimeout(() => {
-      axios.get(`http://localhost:3001/CBSE/9/`).then((res) => {
-        if (cat === "treding") {
-          const { treding } = res.data;
-          let aD = treding.filter((el) => id === el.id);
-          setPageData(aD[0]);
-        } else {
-          const { upcomming } = res.data;
-          let aD2 = upcomming.filter((el) => id === el.id);
-          setPageData(aD2[0]);
-        }
-      });
+      axios
+        .get(`http://localhost:3001/CBSE/9/`)
+        .then((res) => {
+          if (cat === "treding") {
+            const { treding } = res.data;
+            let aD = treding.filter((el) => id === el.id);
+            setPageData(aD[0]);
+            setDetail(aD[0]);
+            document.title = `Creative Corner | ${aD[0].subject}`;
+          } else {
+            const { upcomming } = res.data;
+            let aD2 = upcomming.filter((el) => id === el.id);
+            setPageData(aD2[0]);
+            setDetail(aD2[0]);
+            document.title = `Creative Corner | ${aD2[0].subject}`;
+          }
+        })
+        .then(() => ref.current.complete());
     }, 200);
   }, []);
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <InnerDiv>
         <First>
           <FirstInnerDiv>
-            <Link to="/watch" style={LinkStyle}>
+            <Link to='/watch' style={LinkStyle}>
               <Button>
                 <Span>
-                  <img src="./images/arrow.svg" alt="" />
+                  <img src='/images/arrow.svg' alt='' />
                 </Span>
               </Button>
             </Link>
@@ -66,10 +76,10 @@ useEffect(() => {})
           <ThirdFirst>
             <H1Elem>{pageData.subject}</H1Elem>
             <PTag>
-              <p id="">Sep 14, 2021 • 1h 2m </p>
+              <p id=''>Sep 14, 2021 • 1h 2m </p>
             </PTag>
             <FollowTag>
-              <img id="one" src={pageData.img} alt="" />
+              <img id='one' src={pageData.img} alt='' />
               <FOllowLink>
                 <div
                   style={{
@@ -78,10 +88,9 @@ useEffect(() => {})
                     webkitBoxAlign: "center",
                     alignItems: "center",
                     color: "#3C4852",
-                  }}
-                >
+                  }}>
                   <h4 style={{ marginRight: "5px" }}>{pageData.name}</h4>
-                  <img src="./images/Check.svg" alt="" />
+                  <img src='/images/Check.svg' alt='' />
                 </div>
                 <p
                   style={{
@@ -90,8 +99,7 @@ useEffect(() => {})
                     lineHeight: "150%",
                     margin: "0px",
                     color: "#3C4852",
-                  }}
-                >
+                  }}>
                   819K watch mins
                 </p>
               </FOllowLink>
@@ -105,28 +113,27 @@ useEffect(() => {})
           </ThirdFirst>
           <ThirdSecond>
             <ThirdSImage>
-              <img src={pageData.img} alt="" />
+              <img src={pageData.img} alt='' />
             </ThirdSImage>
           </ThirdSecond>
         </Third>
         <Fourth>
           {/* <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}> */}
           <FourthButton onClick={handleLoginEvent}>
-
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src="./images/play.svg" alt="" />
+              <img src='/images/play.svg' alt='' />
             </div>
             Watch Now
           </FourthButton>
           <FourthButton2>
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src="./images/viewpdf.svg" alt="" />
+              <img src='/images/viewpdf.svg' alt='' />
             </div>
             View Pdf
           </FourthButton2>
           <FourthButton2>
             <div style={{ marginRight: "8px", display: "flex" }}>
-              <img src="./images/share.svg" alt="" />
+              <img src='/images/share.svg' alt='' />
             </div>
             Share
           </FourthButton2>
@@ -137,14 +144,14 @@ useEffect(() => {})
 };
 
 const InnerDiv = styled.div`
-  max-width: 1366px;
+  max-width: 1072px;
+  /* height: 590px; */
   width: 100%;
   padding: 0px 0px 40px;
   display: flex;
   flex-direction: column;
   border-radius: 8px;
   /* max-width: 1040px !important; */
-  margin-bottom: 32px;
   margin: auto;
 `;
 
@@ -166,7 +173,7 @@ const FirstInner = styled.div`
   margin: auto 6px;
   cursor: pointer;
   border-radius: 8px;
-  border: 1px solid gray;
+  border: 1px solid #e5edfa;
 `;
 const LinkStyle = {
   color: "#3c4852",
@@ -178,7 +185,7 @@ const Button = styled.button`
   color: #3c4852;
   margin-right: 12px;
   box-shadow: none;
-  border: 1px solid #3c4852;
+  border: 1px solid #e5edfa;
   border-radius: 8px;
   height: 32px;
   width: 32px;
@@ -198,19 +205,15 @@ const Span = styled.span`
 `;
 const DivOne = styled.p`
   color: #3c4852;
-  line-height: 150%;
-  font-size: 12px;
   font-weight: normal;
   transform: skew(20deg);
-  color: var(--color-text-primary);
   white-space: nowrap;
   text-overflow: ellipsis;
   max-width: 280px;
   overflow: hidden;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
   margin: 0px;
+  font-size: 16px !important;
+  cursor: pointer;
 `;
 export const Second = styled.div`
   display: flex;
@@ -286,6 +289,7 @@ const FollowTag = styled.div`
     max-width: 64px;
     border-radius: 6px;
     object-fit: cover;
+    cursor: pointer;
   }
 `;
 const FOllowLink = styled.div`
@@ -294,6 +298,7 @@ const FOllowLink = styled.div`
   justify-content: center;
   flex-direction: column;
   margin-left: 12px;
+  cursor: pointer;
 `;
 const ThirdSecond = styled.div`
   height: 237px;
@@ -309,6 +314,7 @@ const ThirdSImage = styled.div`
     margin-top: 22px;
     max-height: 100%;
     max-width: 100%;
+    cursor: pointer;
   }
 `;
 const Ptag = styled.p`

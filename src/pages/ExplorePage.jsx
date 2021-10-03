@@ -1,5 +1,4 @@
 /** @format */
-
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-scroll";
@@ -8,6 +7,8 @@ import { DataComp } from "../components/ExplorePage/Data";
 import { TeacherData } from "../Utils/fetchData";
 import Footer from "../components/Footer";
 import "./exp.css";
+import LoadingBar from "react-top-loading-bar";
+import { useHistory } from "react-router-dom";
 
 export const ExplorePage = () => {
   const [cbse, setCbse] = React.useState([]);
@@ -15,8 +16,12 @@ export const ExplorePage = () => {
   const [usb, setUsb] = React.useState([]);
   const [jee, setJee] = React.useState([]);
   const [iit, setIit] = React.useState([]);
+  const ref = React.useRef(null);
+  const history = useHistory();
 
   React.useEffect(() => {
+    document.title = "Goals | Unacademy";
+    ref.current.continuousStart();
     TeacherData("CBSE").then((res) => {
       setCbse(res.data);
     });
@@ -32,11 +37,16 @@ export const ExplorePage = () => {
     });
     TeacherData("JEE").then((res) => {
       setIit(res.data);
+      ref.current.complete();
+    });
+    history.listen(() => {
+      window.scrollTo(0, 0);
     });
   }, []);
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <Top />
       <MainDiv>
         <SideBar>

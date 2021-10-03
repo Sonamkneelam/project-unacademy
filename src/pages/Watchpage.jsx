@@ -1,5 +1,5 @@
 /** @format */
-
+import React from "react";
 import styled from "styled-components";
 import HomeIcon from "@mui/icons-material/Home";
 import Single from "../components/WatchPage/Single";
@@ -10,14 +10,25 @@ import Footer from "../components/Footer";
 import Block2 from "../components/WatchPage/Block2";
 import data from "../db.json";
 import Block3 from "../components/WatchPage/Block3";
+import LoadingBar from "react-top-loading-bar";
 
 function WatchPage() {
+  const ref = React.useRef(null);
   const trending = data.CBSE[8].treding;
   const upcoming = data.CBSE[8].upcomming;
   const featured = data.CBSE[8].featured;
 
+  React.useEffect(() => {
+    document.title = "Free Live Class | Creative Corner | Unacademy";
+    ref.current.continuousStart();
+    setTimeout(() => {
+      ref.current.complete();
+    }, 500);
+  }, []);
+
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <WatchPageStyled>
         <div className='one'>
           <div className='box'>
@@ -60,7 +71,7 @@ function WatchPage() {
 const WatchPageStyled = styled.div`
   display: grid;
   grid-template-columns: 30% 60%;
-  
+
   div {
     /* border: 1px solid black; */
   }
@@ -72,7 +83,7 @@ const WatchPageStyled = styled.div`
       margin-left: 5%;
       margin-top: 38px;
       position: fixed;
-     
+
       .heading {
         margin-top: 48px;
         font-weight: bold;

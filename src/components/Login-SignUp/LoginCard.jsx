@@ -1,3 +1,5 @@
+/** @format */
+
 import styled from "styled-components";
 
 export const LoginCard = styled.div`
@@ -8,9 +10,8 @@ export const LoginCard = styled.div`
   top: 0px;
   padding: 0% 3%;
   box-sizing: border-box;
-  background: #FFFFFF;
+  background: #ffffff;
   z-index: 5;
-
   /* COLOUR BASE-1 */
 
   .close-login-button {

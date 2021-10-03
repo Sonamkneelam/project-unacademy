@@ -9,7 +9,9 @@ function Block2({ title1, title2, data, cat }) {
     <Block2Styled>
       <div className='one'>
         <div className='text1'>{title1}</div>
-        <div onClick={() => history.push("/crack")} className='text2'>
+        <div
+          onClick={() => history.push(`/crack/${cat}/9tttr3`)}
+          className='text2'>
           {title2}
         </div>
       </div>

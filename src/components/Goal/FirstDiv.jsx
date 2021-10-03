@@ -1,6 +1,8 @@
 /** @format */
 
 import React from "react";
+import { useHistory } from "react-router-dom";
+
 import {
   MainDiv,
   InnerDiv,
@@ -13,6 +15,7 @@ import {
 } from "./Goal-css";
 
 export const First = ({ name }) => {
+  const history = useHistory();
   return (
     <MainDiv>
       <InnerDiv>
@@ -26,7 +29,9 @@ export const First = ({ name }) => {
               learning platform
             </Htag3>
           </SecondInner>
-          <ButtonDiv>Get subscription</ButtonDiv>
+          <ButtonDiv onClick={() => history.push("/watch")}>
+            Get subscription
+          </ButtonDiv>
         </InnerDiv1>
       </InnerDiv>
     </MainDiv>

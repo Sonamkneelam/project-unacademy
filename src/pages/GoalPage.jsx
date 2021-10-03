@@ -14,6 +14,8 @@ import { Reviews } from "../components/Goal/Reviews";
 import { TeacherData } from "../Utils/fetchData";
 import Footer from "../components/Footer.js";
 import axios from "axios";
+import LoadingBar from "react-top-loading-bar";
+import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 const Outer = styled.div`
   /* border: 2px solid red; */
@@ -26,22 +28,28 @@ export const Goal = () => {
   const [recent, setRecent] = React.useState([]);
   const [best, setBest] = React.useState([]);
   const [comp, setComp] = React.useState([]);
+  const ref = React.useRef(null);
 
   React.useEffect(() => {
+    ref.current.continuousStart();
     axios.get("http://localhost:3001/CBSE/9").then((res) => {
       setCourse(res.data.courseSoon);
       setRecent(res.data.recentCourse);
       setBest(res.data.bestAll);
       setComp(res.data.compSyllabus);
+      ref.current.complete();
     });
     TeacherData(cat, id).then((res) => {
+      document.title = `${res.data[0].name} | Unacademy`;
       setData(res.data[0]);
     });
   }, []);
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <Outer>
+        <SchoolSyllabus />
         <First name={data.name} />
         <Second />
         <ThirdDiv items={data.tutor} cat={cat} />
@@ -90,6 +98,7 @@ const OfferLine = styled.div`
   margin-bottom: 50px;
   display: flex;
   border-radius: 5px;
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
   & p {
     margin: auto;
     color: #c53d3d;
@@ -109,6 +118,7 @@ const Ques = styled.div`
   margin: auto;
   margin-bottom: 50px;
   display: flex;
+
   & h4 {
     font-weight: bold;
     font-size: 20px;

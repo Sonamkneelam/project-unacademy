@@ -1,39 +1,22 @@
 /** @format */
-
+import React from "react";
 import styled from "styled-components";
 import HomeBlock3 from "../components/HomeBlock3";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
+import LoadingBar from "react-top-loading-bar";
 
 function BeforeHomePage() {
-  const block3adetails = [
-    {
-      id: "b31",
-      title: "Daily live classes",
-      image:
-        "https://static.uacdn.net/web-cms/dailyliveclasses_0c0023950f_c187155ee3.svg?q=75&w=384",
-      discription:
-        "Chat with educators, ask questions, answer live polls, and get your doubts cleared - all while the class is going on",
-    },
-    {
-      id: "b32",
-      title: "Practice and revise",
-      image:
-        "https://static.uacdn.net/web-cms/syllabus_a9da21d824_b20b285483.svg?q=75&w=384",
-      discription:
-        "Learning isn't just limited to classes with our practice section, mock tests and lecture notes shared as PDFs for your revision",
-    },
-    {
-      id: "b33",
-      title: "Learn anytime, anywhere",
-      image:
-        "https://static.uacdn.net/web-cms/learnanytimeanywhere_cb19d5de30_b92bc0c6a1.svg?q=75&w=384",
-      discription:
-        "One subscription gets you access to all our live and recorded classes to watch from the comfort of any of your devices Get the learning",
-    },
-  ];
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    ref.current.continuousStart();
+    setTimeout(() => ref.current.complete(), 500);
+  }, []);
+  
   return (
     <BeforeHomePageStyled>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <div className='header'>
         <div className='navbar'>
           <img
@@ -306,5 +289,30 @@ const BeforeHomePageStyled = styled.div`
     }
   }
 `;
-
+const block3adetails = [
+  {
+    id: "b31",
+    title: "Daily live classes",
+    image:
+      "https://static.uacdn.net/web-cms/dailyliveclasses_0c0023950f_c187155ee3.svg?q=75&w=384",
+    discription:
+      "Chat with educators, ask questions, answer live polls, and get your doubts cleared - all while the class is going on",
+  },
+  {
+    id: "b32",
+    title: "Practice and revise",
+    image:
+      "https://static.uacdn.net/web-cms/syllabus_a9da21d824_b20b285483.svg?q=75&w=384",
+    discription:
+      "Learning isn't just limited to classes with our practice section, mock tests and lecture notes shared as PDFs for your revision",
+  },
+  {
+    id: "b33",
+    title: "Learn anytime, anywhere",
+    image:
+      "https://static.uacdn.net/web-cms/learnanytimeanywhere_cb19d5de30_b92bc0c6a1.svg?q=75&w=384",
+    discription:
+      "One subscription gets you access to all our live and recorded classes to watch from the comfort of any of your devices Get the learning",
+  },
+];
 export default BeforeHomePage;

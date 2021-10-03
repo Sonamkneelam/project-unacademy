@@ -3,10 +3,7 @@
 import styled from "styled-components";
 
 export const MainDiv = styled.div`
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgba(229, 244, 255, 0.44) 100%
-  );
+  background: linear-gradient(180deg, rgba(230, 248, 242, 0) 0%, #e6f8f2 100%);
   font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
 `;
 export const InnerDiv = styled.div`
@@ -19,6 +16,7 @@ export const InnerDiv = styled.div`
   background-repeat: no-repeat;
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/k12/lady.svg);
   background-position: right bottom;
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
 `;
 export const HeaderDiv = styled.div`
   margin: 24px auto 6px;
@@ -28,6 +26,7 @@ export const Htag = styled.div`
   font-size: 48px;
   line-height: 150%;
   margin: 0px;
+  color: #3c4852;
 `;
 export const SecondInner = styled.div`
   margin: 0px 0px 100px;
@@ -37,8 +36,8 @@ export const Htag3 = styled.div`
   font-weight: normal;
   line-height: 150%;
   font-size: 24px;
-  color: "#3c4852";
   margin: 0px;
+  color: #3c4852;
 `;
 export const InnerDiv1 = styled.div`
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/k12/wall.svg);
@@ -85,8 +84,7 @@ export const InnerDiv2 = styled.div`
 export const FirstInnerDiv2 = styled.div`
   height: 409px;
   padding: 40px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   display: flex;
   flex-direction: column;

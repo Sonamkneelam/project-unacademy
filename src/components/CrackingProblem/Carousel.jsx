@@ -1,40 +1,71 @@
 /** @format */
 import React from "react";
 import styled from "styled-components";
+// import LoadingBar from "react-top-loading-bar";
 
+export const CauroselDiv = ({ title, detail, change }) => {
+  console.log(detail);
 
-export const CauroselDiv = ({ title }) => {
   return (
     <div style={{ display: "grid" }}>
       <Title>
         <TitleH2>{title}</TitleH2>
       </Title>
       <SecondComp>
-        {DummyData.map(({ img, title, end, name }) => {
-          return (
-            <InnerSecondCOmp>
-              <InnerTwo>
-                <img src={img} alt='' />
-              </InnerTwo>
-              <InnerTwo2>
-                <InnerTwo22>
-                  <Second>
-                    <SecondSpan>Hindi</SecondSpan>
-                    <SecondSpan1>Beyond School Syllabus</SecondSpan1>
-                  </Second>
-                  <LinkOne>
-                    <h4>Simple robot in 60 minutes</h4>
-                  </LinkOne>
-                  <InnerTwo22P>Ended on Oct 18, 2020</InnerTwo22P>
-                </InnerTwo22>
-                <div style={{ webkitBoxFlex: 1, flexGrow: 1 }}></div>
-                <InnerTwo23>
-                  <h4>Satish Kumar</h4>
-                </InnerTwo23>
-              </InnerTwo2>
-            </InnerSecondCOmp>
-          );
-        })}
+        {!change
+          ? DummyData.map(({ img, title, end, name }) => {
+              return (
+                <InnerSecondCOmp>
+                  <InnerTwo>
+                    <img src={img} alt='' />
+                  </InnerTwo>
+                  <InnerTwo2>
+                    <InnerTwo22>
+                      <Second>
+                        <SecondSpan>Hindi</SecondSpan>
+                        <SecondSpan1>Beyond School Syllabus</SecondSpan1>
+                      </Second>
+                      <LinkOne>
+                        <h4>{title}</h4>
+                      </LinkOne>
+                      <InnerTwo22P>{end}</InnerTwo22P>
+                    </InnerTwo22>
+                    <div style={{ webkitBoxFlex: 1, flexGrow: 1 }}></div>
+                    <InnerTwo23>
+                      <h4>{name}</h4>
+                    </InnerTwo23>
+                  </InnerTwo2>
+                </InnerSecondCOmp>
+              );
+            })
+          : DummyData2.map(({ img, title, end, name }) => {
+              return (
+                <InnerSecondCOmp>
+                  <InnerTwo>
+                    <img
+                      src='https://edge.uacdn.net/static/thumbnail/course/5b7412dd14154ae9b1736be89fea72de.png?q=75&w=1920&fm=webp'
+                      alt=''
+                    />
+                  </InnerTwo>
+                  <InnerTwo2>
+                    <InnerTwo22>
+                      <Second>
+                        <SecondSpan>Hindi</SecondSpan>
+                        <SecondSpan1>Beyond School Syllabus</SecondSpan1>
+                      </Second>
+                      <LinkOne>
+                        <h4>{title}</h4>
+                      </LinkOne>
+                      <InnerTwo22P>Ended on Oct 18, 2020</InnerTwo22P>
+                    </InnerTwo22>
+                    <div style={{ webkitBoxFlex: 1, flexGrow: 1 }}></div>
+                    <InnerTwo23>
+                      <h4>Satish Kumar</h4>
+                    </InnerTwo23>
+                  </InnerTwo2>
+                </InnerSecondCOmp>
+              );
+            })}
       </SecondComp>
     </div>
   );
@@ -73,6 +104,7 @@ const InnerTwo = styled.div`
     max-width: 100%;
     object-fit: cover;
     box-shadow: rgb(0 0 0 / 10%) 0px 4px 12px;
+    cursor: pointer;
   }
 `;
 const InnerTwo2 = styled.div`
@@ -115,19 +147,45 @@ const DummyData = [
   },
   {
     img: "https://edge.uacdn.net/static/thumbnail/course/0a8f59488b194177a3ef264b8856b644.png?q=100&w=512",
-    title: "Simple robot in 60 minutes",
+    title: "10 Hacks That Only a Financial Genius Knows",
     end: "Ended on Oct 18, 2020",
     name: "Himanshu Arora",
   },
   {
     img: "https://edge.uacdn.net/static/thumbnail/course/3da7ea360a884cb98a2910e174ee6003.png?q=100&w=512",
-    title: "Simple robot in 60 minutes",
+    title: "10 Commandments of Salesmanship",
     end: "Ended on Oct 18, 2020",
     name: "Mihair Koltharkar",
   },
   {
     img: "https://edge.uacdn.net/static/thumbnail/course/a6e759f109b547b18f274305548ca828.png?q=100&w=512",
-    title: "10 cool applications of Python",
+    title: "10 Cool applications of Python",
+    end: "Ended on Oct 18, 2020",
+    name: "Ishan Sharma",
+  },
+];
+const DummyData2 = [
+  {
+    img: "https://edge.uacdn.net/static/thumbnail/course/be68717404f44b36bb6220e46ba8222f.png?q=100&w=512",
+    title: "Simple robot in 60 minutes",
+    end: "Ended on Oct 18, 2020",
+    name: "Satish Kumar",
+  },
+  {
+    img: "https://edge.uacdn.net/static/thumbnail/course/0a8f59488b194177a3ef264b8856b644.png?q=100&w=512",
+    title: "10 Hacks That Only a Financial Genius Knows",
+    end: "Ended on Oct 18, 2020",
+    name: "Himanshu Arora",
+  },
+  {
+    img: "https://edge.uacdn.net/static/thumbnail/course/3da7ea360a884cb98a2910e174ee6003.png?q=100&w=512",
+    title: "10 Commandments of Salesmanship",
+    end: "Ended on Oct 18, 2020",
+    name: "Mihair Koltharkar",
+  },
+  {
+    img: "https://edge.uacdn.net/static/thumbnail/course/a6e759f109b547b18f274305548ca828.png?q=100&w=512",
+    title: "10 Cool applications of Python",
     end: "Ended on Oct 18, 2020",
     name: "Ishan Sharma",
   },

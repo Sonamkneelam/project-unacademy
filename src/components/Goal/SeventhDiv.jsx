@@ -56,6 +56,7 @@ export const MainDiv = styled.div`
   max-width: 1136px;
   margin: 70px auto;
   display: grid;
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
 `;
 export const Helem = styled.div`
   color: #3c4852;
@@ -80,7 +81,7 @@ const InnerCard = styled.div`
   align-items: center;
   width: 271px;
   height: 280px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 0px 2px;
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
   padding: 25px 50px;
 `;
 

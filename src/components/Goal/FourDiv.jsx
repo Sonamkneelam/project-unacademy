@@ -21,6 +21,7 @@ export const InnerDiv = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /* box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05); */
   & #slider {
     display: flex;
     justify-content: center;
