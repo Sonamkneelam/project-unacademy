@@ -21,7 +21,6 @@ export const FirstComp = ({ cat, id, setDetail }) => {
       // console.log(user , "500000")
     }
   };
-  useEffect(() => {});
 
   React.useEffect(() => {
     ref.current.continuousStart();

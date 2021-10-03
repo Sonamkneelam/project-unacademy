@@ -10,9 +10,9 @@ import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNone
 import { UserContext } from "../../Contexts/UserContext";
 
 
-export const showContext = createContext({
-  setShowData: () => {},
-});
+// export const showContext = createContext({
+//   setShowData: () => {},
+// });
 
 export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const { handleChange, dModel } = useContext(UserContext);
