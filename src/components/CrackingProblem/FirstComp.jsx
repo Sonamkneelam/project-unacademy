@@ -1,12 +1,26 @@
 /** @format */
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
+import { UserContext } from "../../Contexts/UserContext";
 
 export const FirstComp = ({ data, cat, id, userId }) => {
   const history = useHistory();
   const [pageData, setPageData] = React.useState([]);
+  const { setModalData, user } = useContext(UserContext);
+  // console.log(user, "##)")
+  const handleLoginEvent = () => {
+    if(user == 0){
+      // console.log(user , "00000")
+      setModalData()
+    }
+    else{
+      history.push(`/live/${cat}/${id}`)
+      // console.log(user , "500000")
+    }
+  }
+useEffect(() => {})
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -96,7 +110,9 @@ export const FirstComp = ({ data, cat, id, userId }) => {
           </ThirdSecond>
         </Third>
         <Fourth>
-          <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}>
+          {/* <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}> */}
+          <FourthButton onClick={handleLoginEvent}>
+
             <div style={{ marginRight: "8px", display: "flex" }}>
               <img src="./images/play.svg" alt="" />
             </div>

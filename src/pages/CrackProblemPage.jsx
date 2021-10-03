@@ -15,7 +15,8 @@ import { useState } from "react";
 export const CrackPage = () => {
   const { cat, id } = useParams();
 
-  const { handleChange } = useContext(UserContext);
+  const { handleChange, user } = useContext(UserContext);
+  // console.log(user)
   const handleUserId = (e) => {
     handleChange(e);
   };

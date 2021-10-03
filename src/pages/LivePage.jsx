@@ -15,7 +15,7 @@ export const LivePage = () => {
   const [data, setData] = React.useState([]);
   //console.log(SchoolSyllabus);
   const { user } = useContext(UserContext);
-  console.log("user:", user);
+  // console.log("user:", user);
 
   React.useEffect(() => {
     axios.get(`http://localhost:3001/CBSE/9/`).then((res) => setData(res.data));
