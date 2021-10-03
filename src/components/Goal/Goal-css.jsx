@@ -16,6 +16,7 @@ export const InnerDiv = styled.div`
   background-repeat: no-repeat;
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/k12/lady.svg);
   background-position: right bottom;
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
 `;
 export const HeaderDiv = styled.div`
   margin: 24px auto 6px;
@@ -25,6 +26,7 @@ export const Htag = styled.div`
   font-size: 48px;
   line-height: 150%;
   margin: 0px;
+  color: #3c4852;
 `;
 export const SecondInner = styled.div`
   margin: 0px 0px 100px;
@@ -34,8 +36,8 @@ export const Htag3 = styled.div`
   font-weight: normal;
   line-height: 150%;
   font-size: 24px;
-  color: "#3c4852";
   margin: 0px;
+  color: #3c4852;
 `;
 export const InnerDiv1 = styled.div`
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/k12/wall.svg);

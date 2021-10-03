@@ -13,6 +13,7 @@ function BeforeHomePage() {
     ref.current.continuousStart();
     setTimeout(() => ref.current.complete(), 500);
   }, []);
+  
   return (
     <BeforeHomePageStyled>
       <LoadingBar color='#08BD80' height='4px' ref={ref} />

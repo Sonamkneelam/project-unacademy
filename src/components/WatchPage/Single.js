@@ -19,6 +19,8 @@ const SingleStyled = styled.div`
     font-size: 14px;
     font-weight: bold;
     color: #3c4852;
+    margin-top: 2%;
+    margin-left: 3%;
   }
   &:hover {
     cursor: pointer;

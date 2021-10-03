@@ -4,8 +4,10 @@ import React from "react";
 import { Login } from "../Login-SignUp/Login";
 import { useState } from "react";
 import { School } from "./School";
-
-export const SchoolSyllabus = () => {
+import axios from "axios";
+import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const [show, setShow] = useState(false);
   const [user, setUser] = useState("");
   console.log("user:", user);
@@ -14,34 +16,71 @@ export const SchoolSyllabus = () => {
     setUser(e);
   };
 
+  const handleUserDetails = async () => {
+    const { data } = await axios.get("http://localhost:3001/users");
+    const [userDetails] = data.filter((e) => e.number === user);
+    //console.log("userDetails:", userDetails);
+    // console.log("data:", data);
+    handleUserId(userDetails.id);
+    const courseDetails = {
+      board: "CBSE",
+      boardId: 9,
+      category: cat,
+      courdeId: courseId,
+    };
+    axios.patch(`http://localhost:3001/users/${userDetails.id}`, courseDetails);
+  };
+
   const handleLogin = () => {
     setShow(!show);
     console.log(show);
   };
-
+  if (user) {
+    handleUserDetails();
+  }
   return (
     <div>
       <School>
         <div className='header'>
           <div className='navbar'>
-            <img
-              src='https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256'
-              alt='logo'
-            />
-
-            {show ? (
+            <div>
+              <img
+                src='https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256'
+                alt='logo'
+              />
+              <div style={{ color: " #3C4852" }}>Creative Corner</div>
+            </div>
+            {user ? (
               <>
-                <Login
-                  handleLogin={handleLogin}
-                  handleUser={handleUser}></Login>
+                <div className='account'>
+                  <NotificationsNoneOutlinedIcon
+                    style={{
+                      width: "20px",
+                      height: "20px",
+                    }}></NotificationsNoneOutlinedIcon>
+                  <AccountCircleOutlinedIcon
+                    style={{
+                      width: "28.60px",
+                      height: "28.60px",
+                    }}></AccountCircleOutlinedIcon>
+                </div>
               </>
             ) : (
-              <button onClick={handleLogin} className='button'>
-                Login
-              </button>
+              <>
+                <button onClick={handleLogin} className='button'>
+                  Login
+                </button>
+              </>
             )}
           </div>
         </div>
+        {show ? (
+          <>
+            <Login handleLogin={handleLogin} handleUser={handleUser}></Login>
+          </>
+        ) : (
+          <></>
+        )}
       </School>
     </div>
   );

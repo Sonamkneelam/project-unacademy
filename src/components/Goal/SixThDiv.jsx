@@ -6,7 +6,6 @@ import { MainDiv, InnerDiv, HeadingDiv, H3Elem, SeeAll } from "./FourDiv";
 import styled from "styled-components";
 
 export const SixthDiv = ({ comp }) => {
-  console.log(comp);
   return (
     <>
       <MainDiv>

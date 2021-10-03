@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
-
+import { useHistory } from "react-router-dom";
 import "swiper/components/navigation/navigation.scss";
 import "swiper/components/pagination/pagination.scss";
 import "swiper/components/scrollbar/scrollbar.scss";
@@ -81,6 +81,7 @@ const H4Elem = styled.div`
 `;
 
 export const Slider = ({ items }) => {
+  const history = useHistory();
   return (
     <MainDiv>
       <Swiper
@@ -91,7 +92,10 @@ export const Slider = ({ items }) => {
         navigation>
         {items?.map((el) => {
           return (
-            <SwiperSlide key={el.id} style={Slides}>
+            <SwiperSlide
+              key={el.id}
+              style={Slides}
+              onClick={() => history.push("/watch")}>
               <Image>
                 <ImageDiv>
                   <img src={el.img} alt='' />
@@ -111,6 +115,7 @@ export const Slider = ({ items }) => {
 };
 
 export const SliderType2 = ({ course }) => {
+  const history = useHistory();
   return (
     <>
       <MainDiv style={{ marginTop: "25px" }}>
@@ -122,7 +127,10 @@ export const SliderType2 = ({ course }) => {
           navigation>
           {course?.map((el) => {
             return (
-              <SwiperSlide key={el.id} style={slider2}>
+              <SwiperSlide
+                key={el.id}
+                style={slider2}
+                onClick={() => history.push("/watch")}>
                 <Image>
                   <ImageDiv2>
                     <img src={el.img} alt='' />
@@ -225,6 +233,7 @@ const ImageDiv2 = styled.div`
     max-height: 140px;
     object-fit: cover;
     border-radius: 5px;
+    cursor: pointer;
   }
 `;
 
@@ -238,6 +247,7 @@ const SecondDiv2 = styled.div`
 `;
 
 export const SliderType3 = ({ review }) => {
+  const history = useHistory();
   return (
     <>
       <MainDiv2 style={{ marginTop: "25px" }}>
@@ -250,7 +260,10 @@ export const SliderType3 = ({ review }) => {
           navigation>
           {review?.map((el) => {
             return (
-              <SwiperSlide key={el.id} style={SliderInner}>
+              <SwiperSlide
+                key={el.id}
+                style={SliderInner}
+                onClick={() => history.push("/watch")}>
                 <SwiperInnerMat>
                   <SwiperFirst>
                     <img src='/images/Comma.svg' alt='' />
@@ -356,10 +369,10 @@ const SwiperInnerMat = styled.div`
 `;
 
 export const SliderType4 = ({ course }) => {
-  console.log(course);
+  const history = useHistory();
   return (
     <div style={slider2}>
-      <Image>
+      <Image onClick={() => history.push("/watch")}>
         <ImageDiv2>
           <img src={course.img} alt='' />
         </ImageDiv2>
