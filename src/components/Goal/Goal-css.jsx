@@ -16,7 +16,6 @@ export const InnerDiv = styled.div`
   background-repeat: no-repeat;
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/k12/lady.svg);
   background-position: right bottom;
-  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
 `;
 export const HeaderDiv = styled.div`
   margin: 24px auto 6px;
