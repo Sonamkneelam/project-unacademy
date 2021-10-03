@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import "./exp.css";
 import LoadingBar from "react-top-loading-bar";
 import { useHistory } from "react-router-dom";
+import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 export const ExplorePage = () => {
   const [cbse, setCbse] = React.useState([]);
@@ -47,6 +48,7 @@ export const ExplorePage = () => {
   return (
     <>
       <LoadingBar color='#08BD80' height='4px' ref={ref} />
+      <SchoolSyllabus />
       <Top />
       <MainDiv>
         <SideBar>

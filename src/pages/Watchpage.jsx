@@ -11,6 +11,7 @@ import Block2 from "../components/WatchPage/Block2";
 import data from "../db.json";
 import Block3 from "../components/WatchPage/Block3";
 import LoadingBar from "react-top-loading-bar";
+import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 function WatchPage() {
   const ref = React.useRef(null);
@@ -29,6 +30,7 @@ function WatchPage() {
   return (
     <>
       <LoadingBar color='#08BD80' height='4px' ref={ref} />
+      <SchoolSyllabus />
       <WatchPageStyled>
         <div className='one'>
           <div className='box'>
