@@ -14,6 +14,7 @@ import { Reviews } from "../components/Goal/Reviews";
 import { TeacherData } from "../Utils/fetchData";
 import Footer from "../components/Footer.js";
 import axios from "axios";
+import LoadingBar from "react-top-loading-bar";
 
 const Outer = styled.div`
   /* border: 2px solid red; */
@@ -26,13 +27,16 @@ export const Goal = () => {
   const [recent, setRecent] = React.useState([]);
   const [best, setBest] = React.useState([]);
   const [comp, setComp] = React.useState([]);
+  const ref = React.useRef(null);
 
   React.useEffect(() => {
+    ref.current.continuousStart();
     axios.get("http://localhost:3001/CBSE/9").then((res) => {
       setCourse(res.data.courseSoon);
       setRecent(res.data.recentCourse);
       setBest(res.data.bestAll);
       setComp(res.data.compSyllabus);
+      ref.current.complete();
     });
     TeacherData(cat, id).then((res) => {
       setData(res.data[0]);
@@ -41,6 +45,7 @@ export const Goal = () => {
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <Outer>
         <First name={data.name} />
         <Second />

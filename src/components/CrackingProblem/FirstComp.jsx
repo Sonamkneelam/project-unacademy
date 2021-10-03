@@ -3,28 +3,35 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import axios from "axios";
+import LoadingBar from "react-top-loading-bar";
 
-export const FirstComp = ({ data, cat, id }) => {
+export const FirstComp = ({ cat, id }) => {
+  const ref = React.useRef(null);
   const [pageData, setPageData] = React.useState([]);
 
   React.useEffect(() => {
+    ref.current.continuousStart();
     setTimeout(() => {
-      axios.get(`http://localhost:3001/CBSE/9/`).then((res) => {
-        if (cat === "treding") {
-          const { treding } = res.data;
-          let aD = treding.filter((el) => id === el.id);
-          setPageData(aD[0]);
-        } else {
-          const { upcomming } = res.data;
-          let aD2 = upcomming.filter((el) => id === el.id);
-          setPageData(aD2[0]);
-        }
-      });
+      axios
+        .get(`http://localhost:3001/CBSE/9/`)
+        .then((res) => {
+          if (cat === "treding") {
+            const { treding } = res.data;
+            let aD = treding.filter((el) => id === el.id);
+            setPageData(aD[0]);
+          } else {
+            const { upcomming } = res.data;
+            let aD2 = upcomming.filter((el) => id === el.id);
+            setPageData(aD2[0]);
+          }
+        })
+        .then(() => ref.current.complete());
     }, 200);
   }, []);
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <InnerDiv>
         <First>
           <FirstInnerDiv>

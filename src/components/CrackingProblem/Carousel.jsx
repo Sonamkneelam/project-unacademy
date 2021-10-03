@@ -1,7 +1,7 @@
 /** @format */
 import React from "react";
 import styled from "styled-components";
-
+import LoadingBar from "react-top-loading-bar";
 
 export const CauroselDiv = ({ title }) => {
   return (

@@ -1,5 +1,5 @@
 /** @format */
-
+import React from "react";
 import styled from "styled-components";
 import HomeIcon from "@mui/icons-material/Home";
 import Single from "../components/WatchPage/Single";
@@ -9,13 +9,21 @@ import Block1 from "../components/WatchPage/Block1";
 import Footer from "../components/Footer";
 import Block2 from "../components/WatchPage/Block2";
 import data from "../db.json";
+import LoadingBar from "react-top-loading-bar";
 
 function WatchPage() {
   const trending = data.CBSE[8].treding;
   const upcoming = data.CBSE[8].upcomming;
+  const ref = React.useRef(null);
+
+  React.useEffect(() => {
+    ref.current.continuousStart();
+    setTimeout(() => ref.current.complete(), 500);
+  }, []);
 
   return (
     <>
+      <LoadingBar color='#08BD80' height='4px' ref={ref} />
       <WatchPageStyled>
         <div className='one'>
           <div className='box'>

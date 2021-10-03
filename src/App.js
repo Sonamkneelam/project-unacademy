@@ -12,12 +12,12 @@ import { SchoolSyllabus } from "./components/SchoolSyllabus/SchoolSyllabus";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { auth } from "./Configs/firebase";
 import { AfterOtp } from "./components/Login-SignUp/AfterOtp";
-// import LoadingBar from "react-top-loading-bar";
+
 
 function App() {
   const [user] = useAuthState(auth);
   console.log("user:", user);
-  const ref = React.useRef(null);
+  
 
   return (
     <div>

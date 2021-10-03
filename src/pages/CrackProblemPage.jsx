@@ -6,16 +6,10 @@ import { FirstComp } from "../components/CrackingProblem/FirstComp";
 import { CauroselDiv } from "../components/CrackingProblem/Carousel";
 import Footer from "../components/Footer";
 import { useParams } from "react-router-dom";
-import axios from "axios";
 import { SchoolSyllabus } from "../components/SchoolSyllabus/SchoolSyllabus";
 
 export const CrackPage = () => {
   const { cat, id } = useParams();
-  // const [data, setData] = React.useState([]);
-
-  // React.useEffect(() => {
-  //   axios.get(`http://localhost:3001/CBSE/9/`).then((res) => setData(res.data));
-  // }, []);
 
   return (
     <>

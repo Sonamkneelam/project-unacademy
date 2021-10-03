@@ -100,7 +100,6 @@ const H5Eleme = styled.h5`
 
 const PtagInnerTag = styled.p`
   margin-top: 8px;
-  color: red;
   font-weight: normal;
   font-size: 12px;
   line-height: 150%;

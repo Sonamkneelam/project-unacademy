@@ -3,10 +3,7 @@
 import styled from "styled-components";
 
 export const MainDiv = styled.div`
-  background-image: linear-gradient(
-    rgba(255, 255, 255, 0) 0%,
-    rgba(229, 244, 255, 0.44) 100%
-  );
+  background: linear-gradient(180deg, rgba(230, 248, 242, 0) 0%, #e6f8f2 100%);
   font-family: AvertaStd, -apple-system, BlinkMacSystemFont, sans-serif !important;
 `;
 export const InnerDiv = styled.div`
@@ -85,8 +82,7 @@ export const InnerDiv2 = styled.div`
 export const FirstInnerDiv2 = styled.div`
   height: 409px;
   padding: 40px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-
+  box-shadow: 0px 14px 50px rgba(0, 0, 0, 0.05);
   border-radius: 12px;
   display: flex;
   flex-direction: column;
