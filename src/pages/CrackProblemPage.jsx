@@ -15,7 +15,9 @@ export const CrackPage = () => {
   const [detail, setDetail] = React.useState([]);
   const { cat, id } = useParams();
   const history = useHistory();
-  const { handleChange } = useContext(UserContext);
+
+  const { handleChange, user } = useContext(UserContext);
+  // console.log(user)
   const handleUserId = (e) => {
     handleChange(e);
   };

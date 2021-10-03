@@ -2,19 +2,36 @@
 import React from "react";
 
 import { Login } from "../Login-SignUp/Login";
-import { useState } from "react";
+import { useState, createContext, useContext, useEffect } from "react";
 import { School } from "./School";
 import axios from "axios";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
+import { UserContext } from "../../Contexts/UserContext";
+
+
+export const showContext = createContext({
+  setShowData: () => {},
+});
+
 export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
-  const [show, setShow] = useState(false);
+  const { handleChange, dModel } = useContext(UserContext);
+  const [show, setShow] = useState(dModel || false);
   const [user, setUser] = useState("");
-  console.log("user:", user);
+  // console.log("user:", user);
   const handleUser = (e) => {
-    console.log("e:", e);
+    // console.log("e:", e);
     setUser(e);
+  handleChange(e)
   };
+  // console.log(show)
+  
+  // const setShowData=(data) =>{
+  //   console.log()
+  // }
+  useEffect(() => {
+    setShow(dModel);
+  }, [dModel])
 
   const handleUserDetails = async () => {
     const { data } = await axios.get("http://localhost:3001/users");
@@ -33,7 +50,7 @@ export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
 
   const handleLogin = () => {
     setShow(!show);
-    console.log(show);
+    // console.log(show);
   };
   if (user) {
     handleUserDetails();

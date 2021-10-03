@@ -4392,7 +4392,7 @@
       "board": "CBSE",
       "boardId": 9,
       "category": "treding",
-      "courdeId": "9tttr1"
+      "courdeId": "9tttr2"
     },
     {
       "name": "Sonam",
@@ -4413,8 +4413,8 @@
       "id": 4,
       "board": "CBSE",
       "boardId": 9,
-      "category": "treding",
-      "courdeId": "9tttr1"
+      "category": "upcomming",
+      "courdeId": "9ttuc1"
     }
   ],
   "reviews": [

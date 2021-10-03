@@ -1,14 +1,27 @@
 /** @format */
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { Link, useHistory } from "react-router-dom";
 import axios from "axios";
+import { UserContext } from "../../Contexts/UserContext";
 import LoadingBar from "react-top-loading-bar";
 
 export const FirstComp = ({ cat, id, setDetail }) => {
   const history = useHistory();
   const ref = React.useRef(null);
   const [pageData, setPageData] = React.useState([]);
+  const { setModalData, user } = useContext(UserContext);
+  // console.log(user, "##)")
+  const handleLoginEvent = () => {
+    if (user === 0) {
+      // console.log(user , "00000")
+      setModalData();
+    } else {
+      history.push(`/live/${cat}/${id}`);
+      // console.log(user , "500000")
+    }
+  };
+  useEffect(() => {});
 
   React.useEffect(() => {
     ref.current.continuousStart();
@@ -105,7 +118,8 @@ export const FirstComp = ({ cat, id, setDetail }) => {
           </ThirdSecond>
         </Third>
         <Fourth>
-          <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}>
+          {/* <FourthButton onClick={() => history.push(`/live/${cat}/${id}`)}> */}
+          <FourthButton onClick={handleLoginEvent}>
             <div style={{ marginRight: "8px", display: "flex" }}>
               <img src='/images/play.svg' alt='' />
             </div>
