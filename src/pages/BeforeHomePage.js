@@ -39,7 +39,7 @@ function BeforeHomePage() {
                 alt='doll'
               />
               <div className='line1'>Prepare for</div>
-              <div className='line2'>Compitative exams</div>
+              <div className='line2'>Competitive exams</div>
               <div className='line3'>Popular goles</div>
               <div className='line4'>
                 <div>UPSC CSE - GS</div>
