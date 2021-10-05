@@ -42,7 +42,7 @@ export const SchoolSyllabus = ({ cat, courseId }) => {
     if (userDetails !== undefined) send(userDetails.id, courseDetails);
   };
   const send = (id, courseDetails) => {
-    axios.patch(`http://localhost:3001/users/${id}`, courseDetails);
+    axios.patch(`https://my-cool-projectdb.herokuapp.com/users/${id}`, courseDetails);
   };
 
   const handleLogin = () => {
