@@ -34,7 +34,7 @@ export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   }, [dModel])
 
   const handleUserDetails = async () => {
-    const { data } = await axios.get("http://localhost:3001/users");
+    const { data } = await axios.get("https://my-cool-projectdb.herokuapp.com/users");
     const [userDetails] = data.filter((e) => e.number === user);
     //console.log("userDetails:", userDetails);
     // console.log("data:", data);

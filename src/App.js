@@ -14,6 +14,11 @@ import { auth } from "./Configs/firebase";
 //import { Navbar } from "./components/Navbar/Navbar";
 
 function App() {
+  const env = process.env.NODE_ENV;
+  const dev = process.env.REACT_APP_DEV;
+  const sec = process.env.REACT_APP_SECRECT;
+  console.log(env, dev, sec)
+
   const [user] = useAuthState(auth);
   // console.log("user:", user);
 
