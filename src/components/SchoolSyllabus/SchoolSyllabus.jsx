@@ -2,17 +2,12 @@
 import React from "react";
 
 import { Login } from "../Login-SignUp/Login";
-import { useState, createContext, useContext, useEffect } from "react";
+import { useState, useContext, useEffect } from "react";
 import { School } from "./School";
 import axios from "axios";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import { UserContext } from "../../Contexts/UserContext";
-
-
-// export const showContext = createContext({
-//   setShowData: () => {},
-// });
 
 export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const { handleChange, dModel } = useContext(UserContext);
@@ -22,16 +17,16 @@ export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   const handleUser = (e) => {
     // console.log("e:", e);
     setUser(e);
-  handleChange(e)
+    handleChange(e);
   };
   // console.log(show)
-  
+
   // const setShowData=(data) =>{
   //   console.log()
   // }
   useEffect(() => {
     setShow(dModel);
-  }, [dModel])
+  }, [dModel]);
 
   const handleUserDetails = async () => {
     const { data } = await axios.get("https://my-cool-projectdb.herokuapp.com/users");
@@ -58,33 +53,35 @@ export const SchoolSyllabus = ({ cat, courseId, handleUserId }) => {
   return (
     <div>
       <School>
-        <div className='header'>
-          <div className='navbar'>
+        <div className="header">
+          <div className="navbar">
             <div>
               <img
-                src='https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256'
-                alt='logo'
+                src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256"
+                alt="logo"
               />
               <div style={{ color: " #3C4852" }}>Creative Corner</div>
             </div>
             {user ? (
               <>
-                <div className='account'>
+                <div className="account">
                   <NotificationsNoneOutlinedIcon
                     style={{
                       width: "20px",
                       height: "20px",
-                    }}></NotificationsNoneOutlinedIcon>
+                    }}
+                  ></NotificationsNoneOutlinedIcon>
                   <AccountCircleOutlinedIcon
                     style={{
                       width: "28.60px",
                       height: "28.60px",
-                    }}></AccountCircleOutlinedIcon>
+                    }}
+                  ></AccountCircleOutlinedIcon>
                 </div>
               </>
             ) : (
               <>
-                <button onClick={handleLogin} className='button'>
+                <button onClick={handleLogin} className="button">
                   Login
                 </button>
               </>
