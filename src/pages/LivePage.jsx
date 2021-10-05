@@ -18,7 +18,7 @@ export const LivePage = () => {
   // console.log("user:", user);
 
   React.useEffect(() => {
-    axios.get(`http://localhost:3001/CBSE/9/`).then((res) => setData(res.data));
+    axios.get(`https://my-cool-projectdb.herokuapp.com/CBSE/9/`).then((res) => setData(res.data));
   }, []);
 
   return (

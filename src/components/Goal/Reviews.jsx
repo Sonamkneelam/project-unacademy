@@ -10,7 +10,7 @@ export const Reviews = ({ name }) => {
   const [review, setReview] = React.useState([]);
 
   React.useState(() => {
-    axios.get("http://localhost:3001/reviews").then((res) => {
+    axios.get("https://my-cool-projectdb.herokuapp.com/reviews").then((res) => {
       setReview(res.data);
     });
   }, []);

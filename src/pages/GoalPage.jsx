@@ -32,7 +32,7 @@ export const Goal = () => {
 
   React.useEffect(() => {
     ref.current.continuousStart();
-    axios.get("http://localhost:3001/CBSE/9").then((res) => {
+    axios.get("https://my-cool-projectdb.herokuapp.com/CBSE/9").then((res) => {
       setCourse(res.data.courseSoon);
       setRecent(res.data.recentCourse);
       setBest(res.data.bestAll);

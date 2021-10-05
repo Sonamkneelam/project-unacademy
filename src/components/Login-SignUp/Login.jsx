@@ -55,7 +55,7 @@ export const Login = ({ handleLogin, handleUser }) => {
         if (login) {
           handleUser(mynumber);
         } else {
-          axios.post("http://localhost:3001/users", payload);
+          axios.post("https://my-cool-projectdb.herokuapp.com/users", payload);
 
           handleUser(mynumber);
         }

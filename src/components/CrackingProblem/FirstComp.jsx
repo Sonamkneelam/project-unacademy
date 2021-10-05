@@ -26,7 +26,7 @@ export const FirstComp = ({ cat, id, setDetail }) => {
     ref.current.continuousStart();
     setTimeout(() => {
       axios
-        .get(`http://localhost:3001/CBSE/9/`)
+        .get(`https://my-cool-projectdb.herokuapp.com/CBSE/9/`)
         .then((res) => {
           if (cat === "treding") {
             const { treding } = res.data;
