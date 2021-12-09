@@ -8,11 +8,13 @@ import axios from "axios";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 import NotificationsNoneOutlinedIcon from "@mui/icons-material/NotificationsNoneOutlined";
 import { UserContext } from "../../Contexts/UserContext";
+import { useHistory } from "react-router-dom";
 
 export const SchoolSyllabus = ({ cat, courseId }) => {
   const { handleChange, dModel } = useContext(UserContext);
   const [show, setShow] = useState(dModel || false);
   const [user, setUser] = useState("");
+  const history = useHistory();
   // console.log("user:", user);
   const handleUser = (e) => {
     // console.log("e:", e);
@@ -64,6 +66,8 @@ export const SchoolSyllabus = ({ cat, courseId }) => {
           <div className="navbar">
             <div>
               <img
+                style={{ cursor: "pointer" }}
+                onClick={() => history.push("/")}
                 src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256"
                 alt="logo"
               />

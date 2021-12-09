@@ -19,6 +19,7 @@ function BeforeHomePage() {
       <div className="header">
         <div className="navbar">
           <img
+            style={{ cursor: "pointer" }}
             src="https://static.uacdn.net/production/_next/static/images/logo.svg?q=75&w=256"
             alt="logo"
           />
