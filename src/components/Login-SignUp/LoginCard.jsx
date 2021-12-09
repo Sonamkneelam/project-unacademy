@@ -3,7 +3,7 @@
 import styled from "styled-components";
 
 export const LoginCard = styled.div`
-  position: absolute;
+  position: fixed;
   width: 40.7%;
   height: 100vh;
   right: 0px;
@@ -29,7 +29,7 @@ export const LoginCard = styled.div`
   .login {
     position: absolute;
     width: 513px;
-    height: 49px;
+    height: 50px;
     max-width: 513px;
     left: 52px;
     top: 70px;
@@ -42,13 +42,19 @@ export const LoginCard = styled.div`
   .signup {
     position: absolute;
     width: 513px;
-    height: 49px;
+    height: 50px;
     left: 52px;
-    top: 16%;
+    top: 120px;
   }
 
   .signup > span {
     color: #08bd80;
     border-bottom: 1px dashed #08bd80;
+  }
+
+  .input-field {
+    position: absolute;
+    top: 170px;
+    left: 52px;
   }
 `;

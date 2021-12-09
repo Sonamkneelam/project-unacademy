@@ -1,73 +1,64 @@
 .input {
-    background: #FFFFFF;
-    border: 1px solid #E9EEF2;
-    box-sizing: border-box;
-    border-radius: 6px;
-    width: 500px;
-    height: 54px;
-    top: 22%;
-    left: 50px;
-    position: absolute;
-    padding: 4% 5%;
-
+  background: #ffffff;
+  border: 1px solid #e9eef2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 450px;
+  height: 54px;
+  position: absolute;
+  padding: 0 20px;
+  font-size: 17px !important;
 }
 
 .input:focus {
-    outline: none;
-
+  outline: none;
 }
 
 .buttonContainer {
-    top: 30%;
-    left: 50px;
-    position: absolute;
-    width: 500px;
-
+  top: 235px;
+  left: 60px;
+  position: absolute;
+  width: 500px;
 }
 
 .button {
-    width: 17%;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 1% 0;
-
+  width: 17%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1% 0;
 }
-
-
 
 .formContainer {
-    top: 19%;
-    left: 50px;
-    position: absolute;
+  top: 150px;
+  left: 50px;
+  position: absolute;
 }
 
-.formContainer>input {
-    padding: 4% 5%;
-    background: #FFFFFF;
-    border: 1px solid #E9EEF2;
-    box-sizing: border-box;
-    border-radius: 6px;
-    width: 500px;
-    height: 54px;
-    margin: 1.4% 0;
+.formContainer > input {
+  padding: 4% 5%;
+  background: #ffffff;
+  border: 1px solid #e9eef2;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 500px;
+  height: 54px;
+  margin: 1.4% 0;
 }
 
-.formContainer>input:focus {
-    outline: none;
-  
+.formContainer > input:focus {
+  outline: none;
 }
 
-.formContainer>button {
-    width: 17%;
-    height: 40px;
-    border-radius: 8px;
-    border: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 1.4% 0;
-
+.formContainer > button {
+  width: 17%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 1.4% 0;
 }

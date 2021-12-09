@@ -3,6 +3,40 @@
 import React from "react";
 import styled from "styled-components";
 
+export const Top = () => {
+  const [showCat, setShowCat] = React.useState(false);
+
+  return (
+    <div style={{ backgroundColor: "rgb(244,249,253)" }}>
+      <OuterDiv>
+        <MainDiv>
+          <h1 style={styleForH1}>Choose your goal</h1>
+          <div style={secondDiv}>
+            <div style={thirdDiv}>
+              <div style={{ display: "flex" }}>
+                <Button1
+                  onClick={() => {
+                    setShowCat(true);
+                  }}
+                >
+                  <Span style={{ color: "#7A8B94" }}>Competitive Exams</Span>
+                  {showCat ? <LineThrough></LineThrough> : true}
+                </Button1>
+                <Button1 onClick={() => setShowCat(false)}>
+                  <Span style={{ color: "#3C4852" }}>Class 6 to 12</Span>
+                  {!showCat ? <LineThrough></LineThrough> : true}
+                </Button1>
+              </div>
+            </div>
+          </div>
+        </MainDiv>
+      </OuterDiv>
+    </div>
+  );
+};
+
+
+
 const OuterDiv = styled.div`
   background-image: url(https://static.uacdn.net/production/_next/static/images/goal/managegoal-k12-light.svg);
   background-position: right bottom;
@@ -54,7 +88,7 @@ const Button1 = styled.button`
   overflow: hidden;
   position: relative;
   max-width: 264px;
-  min-width: 72px;
+  min-width: 204px !important;
   box-sizing: border-box;
   min-height: 48px;
   text-align: center;
@@ -103,34 +137,3 @@ const LineThrough = styled.span`
   transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   border-radius: 5px 5px 0px 0px;
 `;
-
-export const Top = () => {
-  const [showCat, setShowCat] = React.useState(false);
-
-  return (
-    <div style={{ backgroundColor: "rgb(244,249,253)" }}>
-      <OuterDiv>
-        <MainDiv>
-          <h1 style={styleForH1}>Choose your goal</h1>
-          <div style={secondDiv}>
-            <div style={thirdDiv}>
-              <div style={{ display: "flex" }}>
-                <Button1
-                  onClick={() => {
-                    setShowCat(true);
-                  }}>
-                  <Span style={{ color: "#7A8B94" }}>Competitive Exams</Span>
-                  {showCat ? <LineThrough></LineThrough> : true}
-                </Button1>
-                <Button1 onClick={() => setShowCat(false)}>
-                  <Span style={{ color: "#3C4852" }}>Class 6 to 12</Span>
-                  {!showCat ? <LineThrough></LineThrough> : true}
-                </Button1>
-              </div>
-            </div>
-          </div>
-        </MainDiv>
-      </OuterDiv>
-    </div>
-  );
-};

@@ -3,9 +3,9 @@
 import styled from "styled-components";
 
 export const Overlay = styled.div`
-  position: absolute;
+  position: fixed;
   width: 60.3%;
-  height: 714px;
+  height: 100vh;
   left: 0px;
   top: 0px;
   padding: 0% 3%;

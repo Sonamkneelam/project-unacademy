@@ -29,7 +29,9 @@ export const SchoolSyllabus = ({ cat, courseId }) => {
   }, [dModel]);
 
   const handleUserDetails = async () => {
-    const { data } = await axios.get("https://my-cool-projectdb.herokuapp.com/users");
+    const { data } = await axios.get(
+      "https://my-cool-projectdb.herokuapp.com/users"
+    );
     const [userDetails] = data.filter((e) => e.number === user);
     console.log("userDetails:", userDetails);
     // console.log("data:", data);
@@ -42,7 +44,10 @@ export const SchoolSyllabus = ({ cat, courseId }) => {
     if (userDetails !== undefined) send(userDetails.id, courseDetails);
   };
   const send = (id, courseDetails) => {
-    axios.patch(`https://my-cool-projectdb.herokuapp.com/users/${id}`, courseDetails);
+    axios.patch(
+      `https://my-cool-projectdb.herokuapp.com/users/${id}`,
+      courseDetails
+    );
   };
 
   const handleLogin = () => {
